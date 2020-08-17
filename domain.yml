@@ -1,32 +1,16 @@
+actions:
+- utter_greet
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-
+- greet
+- bye
+- thank
 responses:
+  utter_bye:
+  - text: tchau!
   utter_greet:
-  - text: "Ei! Como vc está?"
-
-  utter_cheer_up:
-  - text: "Aqui está algo para te alegrar:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Como eu poderia te ajudar?"
-
-  utter_happy:
-  - text: "Ótimo, continue!"
-
-  utter_goodbye:
-  - text: "tchau"
-
-  utter_iamabot:
-  - text: "Eu sou um robô, desenvolvido no Ifes."
-
+  - text: Ei
+  utter_noworries:
+  - text: Não se preocupe!
 session_config:
-  session_expiration_time: 60
   carry_over_slots_to_new_session: true
+  session_expiration_time: 0
