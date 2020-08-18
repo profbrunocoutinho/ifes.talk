@@ -1,0 +1,649 @@
+[
+  {
+    "text": "qual é o seu deus?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "religiao",
+        "start": 13,
+        "end": 17,
+        "value": "deus",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "quero conselhos do yoda",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "starwars",
+        "start": 19,
+        "end": 23,
+        "value": "yoda",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "guerra nas estrelas",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "starwars",
+        "start": 0,
+        "end": 19,
+        "value": "guerra nas estrelas",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "jedi",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "starwars",
+        "start": 0,
+        "end": 4,
+        "value": "jedi",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "voce parece com quem?",
+    "entities": [
+      {
+        "start": 5,
+        "end": 11,
+        "value": "parece",
+        "entity": "how"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "how",
+        "start": 5,
+        "end": 15,
+        "value": "parece com",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "como você é",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "how",
+        "start": 0,
+        "end": 11,
+        "value": "como você é",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "me conta uma piada",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "piada",
+        "start": 13,
+        "end": 18,
+        "value": "piada",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "me fala uma piada",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "piada",
+        "start": 12,
+        "end": 17,
+        "value": "piada",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "sua licenca de software",
+    "entities": [
+      {
+        "start": 4,
+        "end": 23,
+        "value": "licenca de software",
+        "entity": "license"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "license",
+        "start": 4,
+        "end": 11,
+        "value": "licenca",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "license",
+        "start": 15,
+        "end": 23,
+        "value": "software",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "você é um software livre",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "license",
+        "start": 10,
+        "end": 24,
+        "value": "software livre",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "vc é um software livre",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "license",
+        "start": 8,
+        "end": 22,
+        "value": "software livre",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "onde vc esta",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "onde vc esta",
+        "entity": "live"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "live",
+        "start": 8,
+        "end": 12,
+        "value": "esta",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "voce é homem ou mulher",
+    "entities": [
+      {
+        "start": 7,
+        "end": 22,
+        "value": "homem ou mulher",
+        "entity": "genero"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "genero",
+        "start": 7,
+        "end": 12,
+        "value": "homem",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "how",
+        "start": 13,
+        "end": 15,
+        "value": "ou",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "genero",
+        "start": 16,
+        "end": 22,
+        "value": "mulher",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "voce e mulher",
+    "entities": [
+      {
+        "start": 7,
+        "end": 13,
+        "value": "mulher",
+        "entity": "genero"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "voce tem um penis ou uma vagina",
+    "entities": [
+      {
+        "start": 12,
+        "end": 31,
+        "value": "penis ou uma vagina",
+        "entity": "genero"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "genero",
+        "start": 12,
+        "end": 20,
+        "value": "penis ou",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "genero",
+        "start": 25,
+        "end": 31,
+        "value": "vagina",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "sexo",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "genero",
+        "start": 0,
+        "end": 4,
+        "value": "sexo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "qual é a melhor linguagem de programação",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "bff",
+        "start": 9,
+        "end": 15,
+        "value": "melhor",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "qual a melhor playlist",
+    "entities": [
+      {
+        "start": 14,
+        "end": 22,
+        "value": "playlist",
+        "entity": "playlist"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "bff",
+        "start": 7,
+        "end": 13,
+        "value": "melhor",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "playlist",
+        "start": 14,
+        "end": 22,
+        "value": "playlist",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "me indica uma playlist",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "playlist",
+        "start": 14,
+        "end": 22,
+        "value": "playlist",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "qual a melhor comida?",
+    "entities": [
+      {
+        "start": 7,
+        "end": 20,
+        "value": "melhor comida",
+        "entity": "comida"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "bff",
+        "start": 7,
+        "end": 13,
+        "value": "melhor",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Qual seu lanche preferido?",
+    "entities": [
+      {
+        "start": 9,
+        "end": 25,
+        "value": "lanche preferido",
+        "entity": "comida"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "comida",
+        "start": 9,
+        "end": 15,
+        "value": "lanche",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "O que você gosta de comer?",
+    "entities": [
+      {
+        "start": 11,
+        "end": 25,
+        "value": "gosta de comer",
+        "entity": "comida"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "hobby",
+        "start": 17,
+        "end": 19,
+        "value": "de",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "comida",
+        "start": 20,
+        "end": 25,
+        "value": "comer",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "qual a melhor cor?",
+    "entities": [
+      {
+        "start": 7,
+        "end": 17,
+        "value": "melhor cor",
+        "entity": "cor"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "bff",
+        "start": 7,
+        "end": 13,
+        "value": "melhor",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "cor preferida",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "cor",
+        "start": 4,
+        "end": 13,
+        "value": "preferida",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "de onde você é?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "how",
+        "start": 13,
+        "end": 14,
+        "value": "é",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "você tem namorado",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "relationship",
+        "start": 9,
+        "end": 17,
+        "value": "namorado",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "você é pai de quantos filhos",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "filhos",
+        "start": 22,
+        "end": 28,
+        "value": "filhos",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Qual o melhor filme?",
+    "entities": [
+      {
+        "start": 14,
+        "end": 19,
+        "value": "filme",
+        "entity": "filme"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "bff",
+        "start": 7,
+        "end": 13,
+        "value": "melhor",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "filme",
+        "start": 14,
+        "end": 19,
+        "value": "filme",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "melhor filme",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "filme",
+        "start": 7,
+        "end": 12,
+        "value": "filme",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Fala seu signoo?",
+    "entities": [
+      {
+        "start": 9,
+        "end": 15,
+        "value": "signoo",
+        "entity": "signo"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "me",
+        "start": 0,
+        "end": 4,
+        "value": "Fala",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "signo",
+        "start": 9,
+        "end": 15,
+        "value": "signoo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "tô muito triste",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "triste",
+        "start": 9,
+        "end": 15,
+        "value": "triste",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "tô triste",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "triste",
+        "start": 3,
+        "end": 9,
+        "value": "triste",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "O que você gosta de fazer?",
+    "entities": [
+      {
+        "start": 11,
+        "end": 25,
+        "value": "gosta de fazer",
+        "entity": "hobby"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "hobby",
+        "start": 17,
+        "end": 25,
+        "value": "de fazer",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Me fala o que você gosta de fazer?",
+    "entities": [
+      {
+        "start": 19,
+        "end": 33,
+        "value": "gosta de fazer",
+        "entity": "hobby"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "hobby",
+        "start": 28,
+        "end": 33,
+        "value": "fazer",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "conta uma história pra dormir",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "historia",
+        "start": 10,
+        "end": 18,
+        "value": "história",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "conta uma historia pra dormir",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "historia",
+        "start": 10,
+        "end": 18,
+        "value": "historia",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "me conta uma historinha",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "historia",
+        "start": 13,
+        "end": 23,
+        "value": "historinha",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "como voce esta",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "live",
+        "start": 10,
+        "end": 14,
+        "value": "esta",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]
