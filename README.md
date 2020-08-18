@@ -4,7 +4,7 @@
 Chatbot do Instituto Federal do ES - assistente virtual para os alunos, servidores e comunidade em geral.
 
 * **Branch master**: código estável;
-* **Branch develop**: código de uma release.
+* **Branch 2.0.x**: código em desenvolvimento de uma nova versão. Sofrerá merge na master após aprovação do coordenador.
 
 # Pré-requisitos
 
