@@ -1,0 +1,24 @@
+intents:
+  - cumprimentar
+  - informar
+
+entities:
+  - nome_usuario
+
+slots:
+  nome_usuario:
+    type: text
+
+responses:
+  utter_cumprimentar:
+  - text: "Olá! Meu nome é ifes.talk. Como vc se chama?"
+
+  utter_cumprimentar_usuario_nome:
+  - text: "{nome_usuario}, em que posso te ajudar?"
+  
+  utter_despedida:
+  - text: "Tchau!"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
