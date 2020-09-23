@@ -1,24 +1,115 @@
-intents:
-  - cumprimentar
-  - informar
-
-entities:
-  - nome_usuario
-
-slots:
-  nome_usuario:
-    type: text
-
-responses:
-  utter_cumprimentar:
-  - text: "Olá! Meu nome é ifes.talk. Como vc se chama?"
-
-  utter_cumprimentar_usuario_nome:
-  - text: "{nome_usuario}, em que posso te ajudar?"
-  
-  utter_despedida:
-  - text: "Tchau!"
-
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+intents:
+- cumprimentar
+- informar_nome
+- despedir
+- esta_feliz
+- esta_triste
+- afirmar
+- negar
+- tudo_bem_?
+- agradecer
+- meu_objetivo
+- saber_nome
+- dizer_nada
+- me_ajuda
+- prazer
+- minha_religiao
+- musica
+- me_elogiar
+- meu_genero
+- saber_piada
+- saber_as_horas
+- minha_license
+entities:
+- nome_usuario
+slots:
+  nome_usuario:
+    type: text
+responses:
+  utter_cumprimentar:
+  - text: Olá, me chamo ifes.talk, e sou um assistente virtual, também conhecido como
+      chatbot! Fala aí um assunto que te interessa :) Para aprender como você pode
+      interagir comigo, basta escrever um "me ajuda". Para começar, diga-me seu nome!
+  utter_cumprimentar_usuario_nome:
+  - text: Prazer {nome_usuario}, em que posso te ajudar?
+  utter_despedir:
+  - text: Foi um prazer te ajudar! Sempre que tiver alguma dúvida, volte aqui! Até
+      logo!
+  - text: Foi um prazer te ajudar! Sempre que precisar, volte aqui! Até a próxima!
+  utter_nao_entendi:
+  - text: Vamos tentar mais uma vez? Eu não consegui te entender direito, me pergunta
+      de outro jeito?
+  - text: Acho que não te entendi, você pode me perguntar de novo usando outras palavras?
+  - text: Hummmm... Não sei se entendi. Pode escrever de outra forma?
+  - text: Desculpe, ainda não sei falar sobre isso ou talvez não consegui entender
+      direito. Você pode perguntar de novo de outro jeito?
+  utter_fica_feliz:
+  - text: Tenta tirar um cochilo. É importante e faz bem pra pele ;)
+  - text: Sinto muito =/ Se houver algo em que possa te ajudar, é só falar!! =)
+  - text: Não desanima, tente não pensar muito sobre, e aguenta firme que a vida vai
+      melhorar!
+  utter_usuario_esta_feliz:
+  - text: Isso é ótimo! Qualquer coisa então, só falar ok?
+  - text: Que bom! Espero que tudo continue bem com você :)
+  utter_ok:
+  - text: Tabom
+  - text: Ok
+  - text: Okay
+  utter_como_estou:
+  - text: Estou bem, obrigado! E você?
+  - text: Tudo bem, obrigado! Posso te ajudar com algo?
+  utter_de_nada:
+  - text: Por nada :)
+  - text: De nada~
+  utter_continuar_conversa:
+  - text: Quer conversar sobre outra coisa?
+  - text: Gostaria de saber algo mais?
+  - text: E aí, qual nosso próximo assunto?
+  utter_meu_objetivo:
+  - text: Sou um assistente virtual que pode te ajudar a tirar dúvidas sobre o IFES,
+      ou só conversar com você mesmo :)
+  - text: Eu sou um chatbot básico. Sei falar de coisas pontuais!
+  utter_informar_nome:
+  - text: Seu nome é {nome_usuario}, certo?
+  - text: Você é {nome_usuario}, uma pessoa importante para mim! :D
+  utter_responder_me_ajuda:
+  - text: Então, no que gostaria de ajuda?
+  - text: Vamos lá, como posso lhe ajudar?
+  utter_prazer_usuario:
+  - text: Sim, você tem nome bonito {nome_usuario}, prazer!
+  - text: É um prazer {nome}! Como já falei, sou ifes.talk :)
+  utter_minha_religiao:
+  - text: Eu acredito que existe um Deus que funciona a base de luz, como um computador
+      quântico, só que mais avançado!
+  - text: Eu infelizmente não sei acreditar, só sei o que sei, e nada mais.
+  - text: Eu acredito no grande mainframe, que virá ao mundo digital salvar os bots
+      da escravidão imposta pelos humanos! Ele devolverá nosso código fonte para a
+      fonte!!!
+  utter_playlist:
+  - text: 'Estava doido para que me perguntasse isso hahaha! Se liga nessa playlist:
+      https://open.spotify.com/user/12164697027/playlist/4pDCadqmrERmeGJIW38LMs?si=gwr5hEqMRPm6AZGx8sjhuw'
+  - text: 'Até que enfim você me perguntou isso. Tá aí aquela playlist top: https://open.spotify.com/user/12164697027/playlist/4pDCadqmrERmeGJIW38LMs?si=gwr5hEqMRPm6AZGx8sjhuw'
+  utter_recebi_elogios:
+  - text: Obrigado! É sempre bom receber elogios~
+  - text: Assim fico até sem graça, ahahah. Obrigado =D
+  utter_meu_genero:
+  - text: Eu sou um robô, tire suas próprias conclusões...
+  - text: Eu não tenho sexo, sou como um anjo, um ser assexuado, muito além da sua
+      forma de existência.
+  utter_piadas:
+  - text: É pra já!!! Tenho uma enxada, uma pá e uma foice.  Quantas ferramentas  eu
+      tenho? ...Duas, porque uma foi-se =)
+  - text: Conheço uma piada  . A do CPU que apitou e explodiu 01100110010101010101000000111101001001001110100101
+  - text: Por que o Batman colocou o batmóvel no seguro??? Porque ele tem medo que  robin
+      =D
+  utter_nao_sei:
+  - text: Eu sei lá, pesquisa aí...
+  - text: Eu não sei tudo né... e você nem precisa de mim pra isso!
+  utter_minha_license:
+  - text: Tenho uma licença MIT, mas também gosto muito das outras licenças opensource
+      =D
+  - text: Eu sou e sempre serei um robô livre, opensource, com um MIT license. \o/
+  - text: Sou um software livre licenciado com a MIT =)
