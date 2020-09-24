@@ -2,6 +2,7 @@ language: pt
 pipeline:
 - name: WhitespaceTokenizer
 - name: RegexFeaturizer
+- name: CRFEntityExtractor
 - name: LexicalSyntacticFeaturizer
 - name: CountVectorsFeaturizer
 - name: CountVectorsFeaturizer
