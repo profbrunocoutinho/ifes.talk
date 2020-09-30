@@ -1,0 +1,42 @@
+[
+  {
+    "text": "Tudo bem",
+    "intent": "esta_feliz",
+    "intent_prediction": {
+      "name": "tudo_bem_?",
+      "confidence": 0.605736255645752
+    }
+  },
+  {
+    "text": "Tudo ok",
+    "intent": "esta_feliz",
+    "intent_prediction": {
+      "name": "nlu_fallback",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "N\u00e3o muito bem",
+    "intent": "esta_triste",
+    "intent_prediction": {
+      "name": "nlu_fallback",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Qualquer coisa",
+    "intent": "fallback",
+    "intent_prediction": {
+      "name": "nlu_fallback",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "2 + 3 \u00e9 o que?",
+    "intent": "fallback",
+    "intent_prediction": {
+      "name": "nlu_fallback",
+      "confidence": 1.0
+    }
+  }
+]

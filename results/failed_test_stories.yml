@@ -1,0 +1,106 @@
+version: "2.0"
+stories:
+- story: happy path 1 (C:\Users\Jessica\AppData\Local\Temp\tmprhb1ijvh\80c369b379084623a56f9d0f1bd304f1_conversation_tests.md)
+  steps:
+  - action: action_listen
+  - intent: hello there!
+    user: |-
+      /hello there!
+  - action: utter_greet  # predicted: action_default_fallback
+  - action: action_listen
+  - intent: amazing
+    user: |-
+      /amazing
+  - action: utter_happy  # predicted: action_default_fallback
+  - action: action_listen
+- story: happy path 2 (C:\Users\Jessica\AppData\Local\Temp\tmprhb1ijvh\80c369b379084623a56f9d0f1bd304f1_conversation_tests.md)
+  steps:
+  - action: action_listen
+  - intent: hello there!
+    user: |-
+      /hello there!
+  - action: utter_greet  # predicted: action_default_fallback
+  - action: action_listen
+  - intent: amazing
+    user: |-
+      /amazing
+  - action: utter_happy  # predicted: action_default_fallback
+  - action: action_listen
+  - intent: bye-bye!
+    user: |-
+      /bye-bye!
+  - action: utter_goodbye  # predicted: action_default_fallback
+  - action: action_listen
+- story: sad path 1 (C:\Users\Jessica\AppData\Local\Temp\tmprhb1ijvh\80c369b379084623a56f9d0f1bd304f1_conversation_tests.md)
+  steps:
+  - action: action_listen
+  - intent: hello
+    user: |-
+      /hello
+  - action: utter_greet  # predicted: action_default_fallback
+  - action: action_listen
+  - intent: not good
+    user: |-
+      /not good
+  - action: utter_cheer_up  # predicted: action_default_fallback
+  - action: utter_did_that_help  # predicted: action_listen
+  - action: action_listen
+  - intent: yes
+    user: |-
+      /yes
+  - action: utter_happy  # predicted: action_default_fallback
+  - action: action_listen
+- story: sad path 2 (C:\Users\Jessica\AppData\Local\Temp\tmprhb1ijvh\80c369b379084623a56f9d0f1bd304f1_conversation_tests.md)
+  steps:
+  - action: action_listen
+  - intent: hello
+    user: |-
+      /hello
+  - action: utter_greet  # predicted: action_default_fallback
+  - action: action_listen
+  - intent: not good
+    user: |-
+      /not good
+  - action: utter_cheer_up  # predicted: action_default_fallback
+  - action: utter_did_that_help  # predicted: action_listen
+  - action: action_listen
+  - intent: not really
+    user: |-
+      /not really
+  - action: utter_goodbye  # predicted: action_default_fallback
+  - action: action_listen
+- story: sad path 3 (C:\Users\Jessica\AppData\Local\Temp\tmprhb1ijvh\80c369b379084623a56f9d0f1bd304f1_conversation_tests.md)
+  steps:
+  - action: action_listen
+  - intent: hi
+    user: |-
+      /hi
+  - action: utter_greet  # predicted: action_default_fallback
+  - action: action_listen
+  - intent: very terrible
+    user: |-
+      /very terrible
+  - action: utter_cheer_up  # predicted: action_default_fallback
+  - action: utter_did_that_help  # predicted: action_listen
+  - action: action_listen
+  - intent: no
+    user: |-
+      /no
+  - action: utter_goodbye  # predicted: action_default_fallback
+  - action: action_listen
+- story: say goodbye (C:\Users\Jessica\AppData\Local\Temp\tmprhb1ijvh\80c369b379084623a56f9d0f1bd304f1_conversation_tests.md)
+  steps:
+  - action: action_listen
+  - intent: bye-bye!
+    user: |-
+      /bye-bye!
+  - action: utter_goodbye  # predicted: action_default_fallback
+  - action: action_listen
+- story: bot challenge (C:\Users\Jessica\AppData\Local\Temp\tmprhb1ijvh\80c369b379084623a56f9d0f1bd304f1_conversation_tests.md)
+  steps:
+  - action: action_listen
+  - intent: are you a bot?
+    user: |-
+      /are you a bot?
+  - action: utter_iamabot  # predicted: action_default_fallback
+  - action: action_listen

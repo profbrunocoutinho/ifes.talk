@@ -1,3 +1,4 @@
+version: "2.0"
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
@@ -24,7 +25,7 @@ intents:
 - saber_piada
 - saber_as_horas
 - minha_license
-
+- fallback
 entities:
 - nome_usuario
 
@@ -86,7 +87,7 @@ responses:
 
   utter_informar_nome:
   - text: "Seu nome é {nome_usuario}, certo?"
-  - text: "Você é {nome_usuario}, uma pessoa importante para mim! :D ...\nacertei??"
+  - text: "Você é {nome_usuario}, uma pessoa importante para mim! :D ...\nAcertei??"
 
   utter_responder_me_ajuda:
   - text: "Então, no que gostaria de ajuda?"
