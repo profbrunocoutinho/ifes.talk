@@ -25,8 +25,3 @@ policies:
   core_fallback_threshold: 0.3
   core_fallback_action_name: "action_default_fallback"
   enable_fallback_prediction: True
-rules:
-- rule: Pedir para usuário repetir de outro jeito quando não entende
-  steps:
-  - intent: nlu_fallback
-  - action: utter_nao_entendi
