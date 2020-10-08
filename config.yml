@@ -1,4 +1,5 @@
 language: pt
+
 pipeline:
 - name: WhitespaceTokenizer
 - name: RegexFeaturizer
@@ -14,13 +15,16 @@ pipeline:
 - name: EntitySynonymMapper
 - name: ResponseSelector
   epochs: 100
+- name: FallbackClassifier
+  threshold: 0.4
+  ambiguity_threshold: 0.1
+
 policies:
 - name: MemoizationPolicy
 - name: TEDPolicy
   max_history: 5
   epochs: 100
-- name: MappingPolicy
-- name: FallbackPolicy
-  nlu_threshold: 0.4
-  core_threshold: 0.3
-  fallback_action_name: utter_nao_entendi
+- name: RulePolicy
+  core_fallback_threshold: 0.3
+  core_fallback_action_name: "utter_nao_entendi"
+
