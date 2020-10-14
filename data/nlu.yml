@@ -184,9 +184,9 @@ nlu:
     - vdd
     - corretp
     - certo
+    - sim, obrigado
     - Ok
     - Isso aí
-    - OK
 - intent: negar
   examples: |
     - não
