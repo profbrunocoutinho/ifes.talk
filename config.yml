@@ -6,7 +6,6 @@ pipeline:
 - name: CRFEntityExtractor
 - name: LexicalSyntacticFeaturizer
 - name: CountVectorsFeaturizer
-- name: CountVectorsFeaturizer
   analyzer: char_wb
   min_ngram: 1
   max_ngram: 4
@@ -18,7 +17,6 @@ pipeline:
 - name: FallbackClassifier
   threshold: 0.4
   ambiguity_threshold: 0.1
-
 policies:
 - name: MemoizationPolicy
 - name: TEDPolicy
@@ -26,5 +24,6 @@ policies:
   epochs: 100
 - name: RulePolicy
   core_fallback_threshold: 0.3
+  core_fallback_action_name: "action_default_fallback"
+  enable_fallback_prediction: True
   core_fallback_action_name: "utter_nao_entendi"
-
