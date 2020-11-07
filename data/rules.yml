@@ -12,8 +12,6 @@ rules:
   steps:
   - action: utter_cumprimentar_usuario_nome
 
-rules:
-- rule: solicitar ao usuário para reescrever a sua frase caso o bot não consiga buscar o nome
-  steps:
-  - intent: informar_nome
-  - action: utter_porfavor_reescrever
+
+
+  
