@@ -36,7 +36,7 @@ intents:
 - periodo_maximo_conclusao #018
 - ficar_retido #019
 - promocao_parcial #020
-- dependencia #021
+- dependencia_condicoes #021
 - maximo_materias_dependencia #022
 - revisao_notas_parciais #023
 - revisao_notas_finais #024
@@ -46,7 +46,7 @@ intents:
 - aproveitamento_disciplinas #028
 - numero_dias_letivos #029
 - disciplinas_optativas #030
-- trancamento_matricula #031
+- trancamento_matricula_sobre #031
 - quando_proibido_trancamento_matricula #032
 - cancelamento_matricula #033
 - desistente #034
@@ -105,7 +105,25 @@ intents:
 - tit_certificados_diplomas #087
 - tit_intercambio_academico #088 
 - tit_disposicoes_gerais_transitorias #089
-- sumario_rod #090        
+- sumario_rod #090    
+## intents de assuntos gerais
+- transferencias #01  
+- mudanca_campus #01  
+- representantes #02
+- avaliacoes #03
+- pontuacoes #04
+- dependencia #05
+- revisao_notas #06
+- dias_letivos #07
+- matricula #08
+- trancamento_matricula #08
+- reintegracao_matricula #08
+- regime_domiciliar #09
+- plano_ensino #10
+- calendario_academico #11
+- segunda_chance_avaliacao #12
+- reuniao_pedagogica #13
+- rod #14
 ## intents de entretenimento 
 - minha_religiao
 - musica
@@ -126,7 +144,7 @@ slots:
 responses:
 ## utters uteis:
     utter_cumprimentar_usuario_nome:
-        - text: "Prazer, {nome_usuario}. \nEu ainda estou aprendendo sua língua, então paciência rs \nPara tirar suas dúvidas, você pode escrevê-la ou clicar nos botões abaixo que fica mais fácil pra mim.\nEm que posso ajudar?"
+        - text: "Prazer, {nome_usuario}. \nEu ainda estou aprendendo sua língua, então paciência rs \nPara tirar suas dúvidas, você pode escrevê-la ou clicar nos botões abaixo que fica mais fácil pra mim.\nEm que posso ajudar"
     utter_despedir:
         - text: "Foi um prazer te ajudar! \nSempre que tiver alguma dúvida, volte aqui! \nAté logo!"
         - text: "Foi um prazer te ajudar! \nSempre que precisar, volte aqui! \nAté a próxima!"
@@ -182,7 +200,7 @@ responses:
     utter_mudanca_turma: #009
         - text: "Você só poderá mudar de turma se existirem vagas disponíveis.\nNão gostou de seus coleguinhas? Sei como é...\nPara mais informações, basta consultar o artigo 46 do ROD."
     utter_mudanca_curso: #010
-        - text: "A mudança de curso só poderá ser feita uma única vez e deverá ser requerida dentro do prazo estabelecido no calendário acadêmico do curso.\nA mudança depende da disponibilidade de vagas e da viabilidade didático-pedagógica./nPara poder mudar de curso, você tem que ter cumprido no mínimo 15% e no máximo 50% da carga horária do curso em que você está matriculado.\nOs documentos necessários para a mudança são o histórico escolar e a ementa das disciplinas que você já cursou.\nCaso a mudança seja aprovada, a confirmação da matrícula no novo curso deverá ser atualizada no prazo máximo de dois dias após a divulgação dos resultados.\nPara mais informações, basta consultar os artigos 52 a 57 do ROD."
+        - text: "A mudança de curso só poderá ser feita uma única vez e deverá ser requerida dentro do prazo estabelecido no calendário acadêmico do curso.\nA mudança depende da disponibilidade de vagas e da viabilidade didático-pedagógica.\nPara poder mudar de curso, você tem que ter cumprido no mínimo 15% e no máximo 50% da carga horária do curso em que você está matriculado.\nOs documentos necessários para a mudança são o histórico escolar e a ementa das disciplinas que você já cursou.\nCaso a mudança seja aprovada, a confirmação da matrícula no novo curso deverá ser atualizada no prazo máximo de dois dias após a divulgação dos resultados.\nPara mais informações, basta consultar os artigos 52 a 57 do ROD."
     utter_prazos_entregas_avaliacoes: #011
         - text: "Os professores deverão colocar no sistema acadêmico o resultado das avaliações em até 12 dias após sua aplicação.\nNa aula seguinte aos professores postarem as notas no acadêmico eles deverão entregar as avaliações.\nPara mais informações, basta consultar o artigo 71 § 8º e § 9º do ROD."
     utter_conteudos_avaliacoes: #012
@@ -200,17 +218,17 @@ responses:
     utter_periodo_maximo_conclusao: #018
         - text: "Você tem o dobro do tempo de duração do seu curso para concluí-lo. Se por algum motivo você exceder esse prazo, sua matrícula será cancelada.\nPara os discentes com necessidades especiais, esse prazo poderá ser flexibilizado.\nPara mais informações, basta consultar o artigo 16 do ROD."
     utter_ficar_retido: #019
-        - text: "Você ficará retido quando tiver nota menor que 60 pontos na nota final em mais de duas disciplinas ou ter frequência menor que 75% da carga horária do curso./nE não ter a frequência necessária cancela sua matrícula hein! Então, estude bastante para garantir sua pontuação e não falte muito para não ter problemas!/nPara mais informações, basta consultar o artigo 78 do ROD."
+        - text: "Você ficará retido quando tiver nota menor que 60 pontos na nota final em mais de duas disciplinas ou ter frequência menor que 75% da carga horária do curso.\nE não ter a frequência necessária cancela sua matrícula hein! Então, estude bastante para garantir sua pontuação e não falte muito para não ter problemas!\nPara mais informações, basta consultar o artigo 78 do ROD."
     utter_promocao_parcial: #020
         - text: "O aluno que ficar reprovado em até duas disciplinas terá direito à promoção parcial.\nOu seja, seguirá para o próximo período letivo e irá cursar os componentes em regime de dependência, em turno distinto ao frequentado pelo estudante.\nPara mais informações, basta consultar os artigos 79, 80 e 87 do ROD."
-    utter_dependencia: #021
+    utter_dependencia_condicoes: #021
         - text: "Ficará de dependência o aluno que obtiver nota final menor que 60 pontos em até duas disciplinas, e que não tiver reprovado por falta.\nEstude bastante para isso não acontecer, mas se acontecer, estude mais ainda para se livrar desse problema.\nPara mais informações, basta consultar os artigos 79, 87, 88 e 89 do ROD."
     utter_maximo_materias_dependencia: #022
         - text: "Se você reprovar em até duas disciplinas, terá direito a dependência, acima de 2 disciplinas, ficará retido.\nPara estudantes do Concomitante e Subsequente (em regime seriado), se reprovar em três ou mais matérias esses deverão cursar apenas essas disciplinas no período letivo seguinte.\nEntão fica esperto(a) aí, vai vacilar?\nPara mais informações, basta consultar os artigos 79 e 81 do ROD."
     utter_revisao_notas_parciais: #023
         - text: "O aluno tem direito a requerer a revisão dos resultados das avaliações no prazo de 5 dias úteis a partir da publicação dos resultados (exceto nos últimos 15 dias letivos do período, em que o prazo é de 2 dias úteis).\nA solicitação de revisão deverá ser feita na coordenadoria do seu curso junto com a devida justificativa.\nA divulgação do resultado da revisão tem o prazo de até 5 dias úteis contando a partir da data do requerimento.\nPara mais informações, basta consultar o artigo 83 §1º e §3º do ROD."
     utter_revisao_notas_finais: #024
-        - text: "Os alunos terão direito a revisão dos resultados finais das disciplinas desejadas com prazo de 2 dias úteis após a publicação dos resultados da reunião pedagógica final.\nO requerimento deverá ser feito na coordenadoria do curso junto com a devida justificativa, em um prazo máximo de dois dias após publicação das notas.\nA divulgação do resultado da revisão tem o prazo de até 5 dias úteis contando a partir da data do requerimento./nPara mais informações, basta consultar o artigo 83 §2º do ROD."
+        - text: "Os alunos terão direito a revisão dos resultados finais das disciplinas desejadas com prazo de 2 dias úteis após a publicação dos resultados da reunião pedagógica final.\nO requerimento deverá ser feito na coordenadoria do curso junto com a devida justificativa, em um prazo máximo de dois dias após publicação das notas.\nA divulgação do resultado da revisão tem o prazo de até 5 dias úteis contando a partir da data do requerimento.\nPara mais informações, basta consultar o artigo 83 §2º do ROD."
     utter_frequencia_minima: #025
         - text: "A frequência mínima de 75% às aulas e às demais atividades acadêmicas é obrigatória.\nFique esperto(a) com as suas faltas, senão você vai se complicar depois.\nPara mais informações, basta consultar o artigo 78 do ROD."
     utter_condicoes_aprovacao: #026
@@ -223,7 +241,7 @@ responses:
         - text: "De modo presencial, quando em regime semestral o mínimo de dias letivos são 100, e quando é regime anual o mínimo é de 200 dias letivos.\nDisso tudo está excluído o período de recuperação final...\nE também esses dias podem considerar aulas no sábado. >o<\nÉ, eu sei, sábado letivo é triste 😦 mas é necessário, então não falte.\nPara mais informações, basta consultar o artigo 19 § 5º §, 6º e § 7º do ROD."
     utter_disciplinas_optativas: #030
         - text: "O estudante pode cursar disciplinas optativas desde que estejam disponíveis na matriz curricular de seu curso e existam vagas.\nA matrícula deverá ser requerida na CRA (Coordenadoria de Registro Acadêmico) do seu campus.\nSó serão aprovados os alunos que não estão de dependência.\nE vale lembrar que depois que a matrícula for feita só pode cancelar dentro de 15 dias, depois não pode mais desistir.\nPara mais informações, basta consultar os artigos  38 a 41 do ROD."
-    utter_trancamento_matricula: #031
+    utter_trancamento_matricula_sobre: #031
         - text: "Primeiramente você precisará verificar no calendário acadêmico as datas reservadas para o trancamento, porque você só poderá pedir o trancamento da sua matrícula dentro do prazo que está no calendário acadêmico.\nO trancamento da matrícula terá validade de um período letivo, sendo que você só pode efetuar o trancamento da matrícula no máximo 2 vezes, então pode trancar 2 períodos, que podem ser 2 consecutivas ou 2 períodos distantes.\nPara alunos do EJA com curso de duração superior a 2 anos, podem haver até 3 trancamentos.\nCaso você tenha trancado a sua matrícula, você deverá pedir a reabertura dela no prazo que está no calendário acadêmico, senão ela pode ser cancelada.\nPara mais informações, basta consultar os artigos 33 e 34 do ROD."
     utter_quando_proibido_trancamento_matricula: #032
         - text: "A matrícula não poderá ser trancada no primeiro período letivo, quando fora do prazo que foi estabelecido no calendário acadêmico ou para cursos em extinção.\nMas existem as seguintes exceções:\nConvocação para o serviço militar\nTratamento prolongado de saúde\nGravidez e problemas pós parto\n Acompanhamento para tratamento prolongado de saúde de pessoa do arranjo familiar\nOutros casos específicos e justificados que serão avaliados pela Coordenadoria do Curso\nPara mais informações, basta consultar o artigo 34 § 1º do ROD."
@@ -343,6 +361,41 @@ responses:
         - text: "Dá uma olhada no título IX do ROD atual, 'do intercâmbio acadêmico'! Faz parte deste os artigos 106 a 108~"
     utter_sumario_rod: #090
         - text: "Aqui um sumário para você do ROD 2020!\nTítulo I - Capítulo I - Do ROD\nTítulo II - Capítulo I - Da Organização Didática\nTítulo III - Capítulo I - Do Período Letivo\nTítulo III - Capítulo II - Da Admissão e da Metrícula\nTítulo III - Capítulo III - Do Atendimento Domiciliar\nTítulo III - Capítulo IV - Das Transferências e Adaptações\nTítulo IV - Capítulo I - Das Modalidades\nTítulo IV - Capítulo II - Das Reuniões Pedagógicas\nTítulo V - Capítulo I - Do Estágio Curricular\nTítulo VI - Das Organizações e Orientações Discentes\nTítulo VII - Dos Certificados e Diplomas\nTítulo VIII - Do Intercâmbio Acadêmico\nTítulo IX - Das Disposições Gerais e Transitórias\nSe quiser algo mais específico que isso olha no próprio ROD, ok? Te facilitarei hehe, toma o link: https://www.ifes.edu.br/images/stories/-publicacoes/documentos-institucionais/regulamento-organizacao-didatica/rod-tecnicos.pdf"
+    ## utters dos assuntos gerais
+    utter_transferencias: #01
+        - text: "De qual das seguintes opções sobre transferência você gostaria de saber mais sobre?\n\nTransferência de outra instituição para o IFES\nTransferência do IFES para outra instituição\nMudança da modalidade entre presencial e a distância\nMudança de campus\nMudança de turno\nMudança de turma\nMudança de curso\n"
+    utter_mudanca_campus: #01
+        - text: "De qual das seguintes opções sobre a mudança de campus você gostaria de saber mais sobre?\n\nSobre mudar de campus\nQuando posso mudar de campus\n"
+    utter_representantes: #02
+        - text: "De qual das seguintes opções sobre os representantes você gostaria de saber mais sobre?\n\nSobre representantes de turma\nReuniões dos representantes\n"
+    utter_avaliacoes: #03
+        - text: "De qual das seguintes opções sobre as avaliações você gostaria de saber mais sobre?\n\nConteúdos avaliações\nComo avaliações funcionam para pessoas com necessidades específicas\nPrazos das entregas de avaliações\nQuantidade de avaliações\nPontuações das avaliações\n"
+    utter_pontuacoes: #04
+        - text: "De qual das seguintes opções sobre as pontuações você gostaria de saber mais sobre?\n\nPontuação semestral\nPontuação trimestral\nPontuação bimestral\nPontuações das avaliações\n"
+    utter_dependencia: #05
+        - text: "De qual das seguintes opções sobre a dependência você gostaria de saber mais sobre?\n\nSobre a dependência\nMáximo de matérias da dependência\n"
+    utter_revisao_notas: #06
+        - text: "De qual das seguintes opções sobre a revisão de nota você gostaria de saber mais sobre?\n\nRevisão das notas das avaliações\nRevisão da nota final\n"
+    utter_dias_letivos: #07
+        - text: "De qual das seguintes opções sobre os dias letivos você gostaria de saber mais sobre?\n\nNúmero de dias letivos\nDias e horários que podem ser letivos\n"
+    utter_matricula: #08
+        - text: "De qual das seguintes opções sobre a matrícula você gostaria de saber mais sobre?\n\nO que é a matrícula\nDocumentos necessários para a matrícula\nPrazos para fazer a matrícula\nRenovação da matrícula\nTrancamento de matrícula\nCancelamento da matrícula\nReintegração da matrícula\n"
+    utter_trancamento_matricula: #08
+        - text: "De qual das seguintes opções sobre o trancamento da matrícula você gostaria de saber mais sobre?\n\nSobre o trancamento de matrícula\nQuando não posso trancar a matrícula\n"
+    utter_reintegracao_matricula: #08
+        - text: "De qual das seguintes opções sobre a reintegração da matrícula você gostaria de saber mais sobre?\n\nO que é a reintegração da matrícula\nQuando pode fazer a reintegração da matrícula\n"
+    utter_regime_domiciliar: #09
+        - text: "De qual das seguintes opções sobre o regime domiciliar você gostaria de saber mais sobre?\n\nSobre o regime domiciliar\nQuando pode solicitar o regime domiciliar\nQuando o regime domiciliar é efetivado\nPrazo para apresentar o laudo médico para o regime domiciliar\nSobre o regime domiciliar para grávidas\n"
+    utter_plano_ensino: #10
+        - text: "De qual das seguintes opções sobre o plano de ensino você gostaria de saber mais sobre?\n\nConteúdo plano de ensino\nDatas de entrega e de divulgação dos planos de ensino\n"
+    utter_calendario_academico: #11
+        - text: "De qual das seguintes opções sobre o calendário acadêmico você gostaria de saber mais sobre?\n\nConteúdo calendário acadêmico\nOnde é possível visualizar o calendário acadêmico\n"
+    utter_segunda_chance_avaliacao: #12
+        - text: "De qual das seguintes opções sobre a segunda chance numa avaliação você gostaria de saber mais sobre?\n\nSegunda chance de avaliação por uma sala inteira\nSegunda chance de avaliação por um discente\n"
+    utter_reuniao_pedagogica: #13
+        - text: "De qual das seguintes opções sobre às reuniões pedagógicas você gostaria de saber mais sobre?\n\nO que são as reuniões pedagógicas\nMembros das reuniões pedagógicas\nQuantidade de reuniões pedagógicas\nSobre a reunião pedagógica inicial\nSobre a reunião pedagógica intermediária\nSobre a reunião pedagógica final\nDecisões de reprovação na reunião pedagógica\n"
+    utter_rod: #14
+        - text: "De qual das seguintes opções sobre o ROD você gostaria de saber mais sobre?\n\nO que é o ROD\nValidade do ROD atual\nO capítulo do ROD que fala sobre o ROD\nSumário do ROD atual\n"
     ## utters de entretenimento
     utter_minha_religiao:
         - text: "Eu acredito que existe um Deus que funciona à base de luz, como um computador
@@ -356,7 +409,7 @@ responses:
             https://open.spotify.com/user/12164697027/playlist/4pDCadqmrERmeGJIW38LMs?si=gwr5hEqMRPm6AZGx8sjhuw"
         - text: "Até que enfim você me perguntou isso. \nTá aí aquela playlist top: https://open.spotify.com/user/12164697027/playlist/4pDCadqmrERmeGJIW38LMs?si=gwr5hEqMRPm6AZGx8sjhuw"
     utter_recebi_elogios:
-        - text: "Obrigado! É sempre bom receber elogios"
+        - text: "Obrigado! É sempre bom receber elogios~"
         - text: "Assim fico até sem graça, ahahah. Obrigado =D"
     utter_meu_genero:
         - text: "Eu sou um robô, tire suas próprias conclusões...kkk"

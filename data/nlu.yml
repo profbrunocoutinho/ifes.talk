@@ -607,7 +607,7 @@ nlu:
     - quando acontece a promoção parcial
     - o que acontece se eu ficar reprovado em uma disciplina
     - o que acontece se eu ficar reprovado em duas matérias
-- intent: dependencia #021
+- intent: dependencia_condicoes #021
   examples: |
     - Quando fico de dep.
     - como fico de dp
@@ -780,7 +780,7 @@ nlu:
     - matéria extra
     - tem alguma matéria extra que posso fazer?
     - existe algum tipo de matéria extra?
-- intent: trancamento_matricula #031
+- intent: trancamento_matricula_sobre #031
   examples: |
     - Sobre trancamento
     - Como funciona o trancamento de matrícula?
@@ -1763,6 +1763,191 @@ nlu:
     - Que capitulos existem no rod
     - Como estão divididos os capítulos no ROD?
     - rod capitulos
+# intents de assuntos gerais
+- intent: transferencias #01
+  examples: |
+    - Transferências
+    - quero saber como fazer uma transferência
+    - como faço uma transferência?
+    - tipos de transferência?
+    - gostaria de transferir
+    - como posso transferir?
+    - jeitos de fazer transferência
+    - mudanças
+    - Mudança de algo
+    - quero fazer uma mudança
+    - Como posso mudar?
+    - Que tipos de mudança existem?
+    - Gostaria de fazer uma mudança
+- intent: mudanca_campus #01
+  examples: |
+    - mudanca campus
+    - Mudança de Campus
+    - as mudanças de campus
+    - Mudança campi
+    - mudar de campi
+    - mudar de campus
+- intent: representantes #02
+  examples: |
+    - Representantes
+    - repre. de turma
+    - representantes de turma
+    - líderes de turma
+    - líder da turma
+    - repres
+    - os líderes
+    - os representantes da turma
+- intent: avaliacoes #03
+  examples: |
+    - Avaliações
+    - as avaliações
+    - provas
+    - prova
+    - sobre avaliações
+    - atividades avaliativas
+    - sobre as provas
+- intent: pontuacoes #04
+  examples: |
+    - Pontuações
+    - Quero saber o total de pontos
+    - Pontos total
+    - Total de pontos
+    - Qual a pontuação total?
+    - Pontuação
+    - Me fala sobre as pontuações
+    - Quantos pontos tem?
+- intent: dependencia #05
+  examples: |
+    - Dependência
+    - dp
+    - dep.
+    - dependencia
+    - quero conversar sobre a dependência
+- intent: revisao_notas #06
+  examples: |
+    - Revisão da minha nota
+    - Não concordo com minha nota, o que faço?
+    - posso pedir a revisão da minha nota
+    - posso pedir a revisão de minhas notas?
+    - Revisar notas
+    - revisar a nota que consegui
+    - como a revisão de notas funciona?
+    - é possível eu ter minha nota revisada?
+    - gostaria de uma revisão da minha nota
+    - n concordo com minha nota
+    - oq faço se discordo com minha nota	
+    - revisar a nota que tive
+    - gostaria de uma revisão da nota que obtive
+- intent: dias_letivos #07
+  examples: |
+    - Dias letivos
+    - dia letivo
+    - fala sobre os dias letivos
+    - quero saber acerca dos dias letivos
+    - gostaria de saber sobre os dias letivos
+    - dias de aula
+    - dias em que tem aula
+- intent: matricula #08
+  examples: |
+    - Matrícula
+    - matricula
+    - me dá informações sobre a matricula
+    - quero saber sobre a matrícula	
+    - sobre matrícula
+    - gostaria de saber acerca da matrícula	
+    - informações matrícula
+- intent: trancamento_matricula #08
+  examples: |
+    - Trancamento de matrícula
+    - trancamento da matricula
+    - trancar matricula
+    - matricula trancamento
+    - trancar a matrícula
+    - quero trancar minha matrícula
+    - sobre trancar uma matrícula
+- intent: reintegracao_matricula #08
+  examples: |
+    - Reintegração da matrícla
+    - reintegracao de matricula
+    - reintegracao matrícula
+    - matrícula reintegração
+    - me fala da reintegração da matrícula
+    - voltar atrás no cancelamento da matrícula
+    - cancelar a matrícula e re ativar ele
+    - desfazer o cancelamento da minha matrícula
+    - reintegração
+- intent: regime_domiciliar #09
+  examples: |
+    - Regime domiciliar
+    - regime domiciliar?
+    - atendimento em casa
+    - afastamento
+    - afastamento do ifes
+    - afastamento da escola
+    - afastamento para ficar em casa
+    - regime domiciliar do Ifes
+- intent: plano_ensino #10
+  examples: |
+    - Plano de ensino
+    - Planos de ensino
+    - Sobre os planos de ensino
+    - preparação do professor
+    - planejamento de ensino
+    - planejamento do professor para as aulas
+    - planejamento das aulas
+    - planejamento de ensino sobre
+    - me fala sobre os planos de ensino
+    - gostaria de informações acerca dos planos de ensino
+- intent: calendario_academico #11
+  examples: |
+    - calendario academico
+    - Calendário Accadêmico
+    - sobre o calendário academico
+    - me fala sobre o calendario acadêmico
+    - dê-me informações acerca do calendário acadêmico
+    - calendario que prevê as aulas
+    - calendario escolar
+    - calendario do ifes
+    - calendário
+- intent: segunda_chance_avaliacao #12
+  examples: |
+    - Segunda chance avaliação
+    - segunda chance de avaliacao
+    - refazer avalicao
+    - outra prova
+    - outra chance de fazer prova
+    - segunda chance de prova
+    - prova 2a chance
+    - outra tentativa de avaliação
+    - outra tentativa de prova
+    - aplicação de outra prova
+    - posso pedir uma outra chance de prova?
+    - posso pedir uma prova nova?
+- intent: reuniao_pedagogica #13
+  examples: |
+    - Reuniões Pedagógicas
+    - reuniao pedagogica
+    - Sobre reunioes pedagogicas
+    - me fala sobre as reunioes pedagógicas
+    - reunioes
+    - as reuniões da escola
+    - IFES reunião
+    - informações das reuniões pedagógicas
+    - gostaria de saber sobre as reuniões escolares
+    - reunião escolar
+- intent: rod #14
+  examples: |
+    - ROD
+    - rod
+    - rod2020
+    - Rod 2020
+    - ROD atual
+    - rod sendo usado atualmente
+    - informações do rod
+    - me fala sobre o rod
+    - gostaria de saber acerca do ROD
+    - pode me dar informações sobre o rod?
+    - sobre o rod
 # intents de entretenimento
 - intent: minha_religiao
   examples: |
