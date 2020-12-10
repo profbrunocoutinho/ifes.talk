@@ -1,3 +1,5 @@
+# Configuration for Rasa NLU.
+# https://rasa.com/docs/rasa/nlu/components/
 language: pt
 
 pipeline:
