@@ -1,4 +1,4 @@
-# ifes.talk
+# ifes.talk 2.1.0
 ---
 
 Chatbot do Instituto Federal do Espírito Santo - assistente virtual para os alunos, servidores e comunidade em geral. Atualmente em migração para o Rasa
