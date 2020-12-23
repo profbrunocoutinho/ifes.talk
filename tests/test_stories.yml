@@ -2,90 +2,71 @@
 #### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
 
 stories:
-- story: happy path 1
+- story: cumprimento
   steps:
   - user: |
-      hello there!
-    intent: greet
-  - action: utter_greet
+      oii
+    intent: cumprimento
+  - action: utter_cumprimento
   - user: |
-      amazing
-    intent: mood_great
-  - action: utter_happy
+      [João] {nome_usuario} 
+    intent: informar_nome
+  - action: utter_cumprimentar_usuario_nome
+  - action: listen
+- story: como estou 1
+  steps:
+  - user: |
+      como vc esta?
+    intent: como_esta
+  - action: utter_como_estou
+  - user: |
+      bem
+    intent: esta_feliz
+  - action: utter_usuario_esta_feliz
+  - action: utter_listen
+- story: como estou 2
+  steps:
+  - user: |
+      vc ta bem?
+    intent: como_esta
+  - action: utter_como_estou
+  - user: |
+      mal
+    intent: esta_triste
+  - action: utter_fica_feliz
+  - action: utter_listen
+- story: despedida
+  steps:
+  - user: |
+      tchau
+    intent: despedir
+  - action: utter_despedir
+- story: sou um bot
+  steps:
+  - user: |
+      vc é um bot??
+    intent: meu_objetivo
+  - action: utter_meu_objetivo
 
-- story: happy path 2
+# stories do ROD
+- story: transferencia de outra instituição para o ifes #001
   steps:
   - user: |
-      hello there!
-    intent: greet
-  - action: utter_greet
-  - user: |
-      amazing
-    intent: mood_great
-  - action: utter_happy
-  - user: |
-      bye-bye!
-    intent: goodbye
-  - action: utter_goodbye
-
-- story: sad path 1
+      quero me transferir para o ifes
+    intent: transferencia_de_outra_escola
+  - action: utter_transferencia_de_outra_escola
+  - action: utter_continuar_conversa
+- story: transferencia do ifes para outra escola #002
   steps:
   - user: |
-      hello
-    intent: greet
-  - action: utter_greet
-  - user: |
-      not good
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      yes
-    intent: affirm
-  - action: utter_happy
-
-- story: sad path 2
+      quero sair do ifes
+    intent: transferencia_para_outra_escola
+  - action: utter_transferencia_para_outra_escola
+  - action: utter_continuar_conversa
+- story: Pedir para o usuario repetir o nome porque não entende
   steps:
   - user: |
-      hello
-    intent: greet
-  - action: utter_greet
-  - user: |
-      not good
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      not really
-    intent: deny
-  - action: utter_goodbye
-
-- story: sad path 3
-  steps:
-  - user: |
-      hi
-    intent: greet
-  - action: utter_greet
-  - user: |
-      very terrible
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      no
-    intent: deny
-  - action: utter_goodbye
-
-- story: say goodbye
-  steps:
-  - user: |
-      bye-bye!
-    intent: goodbye
-  - action: utter_goodbye
-
-- story: bot challenge
-  steps:
-  - user: |
-      are you a bot?
-    intent: bot_challenge
-  - action: utter_iamabot
+      Whindersson
+    intent: informar_nome
+  - action: utter_nao_entendi
+  - intent: informar_nome
