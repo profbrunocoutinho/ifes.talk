@@ -289,6 +289,12 @@ nlu:
       - Algo desconhecido
       - 2 + 3 é o que?
       - cuidando da vida
+  - intent: nlu_fallback
+    examples: |
+      - por exemplo?
+      - e agora?
+      - 4 é o que?
+      - perae
   - intent: minha_religiao
     examples: |
       - qual seu religião?
