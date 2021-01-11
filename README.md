@@ -1,18 +1,20 @@
-# ifes.talk
+# ifes.talk 2.1.0
 ---
 
-Chatbot do Instituto Federal do ES - assistente virtual para os alunos, servidores e comunidade em geral. Atualmente em migração para o Rasa
-2.0. Atualização das alterações do ROD do técnico feitas para o ano de 2020 e inclusão dos assuntos relacionados aos RODs dos outros níveis
-de ensino do Ifes.
+Chatbot do Instituto Federal do Espírito Santo - assistente virtual para os alunos, servidores e comunidade em geral. Atualmente em migração para o Rasa
+Core. Atualização dos RODs (técnico, graduação e pós-graduação) na base de conhecimento do chatbot. Acréscimos referentes aos processos seletivos para a
+comunidade em geral.
 
-* **Branch master**: código estável;
-* **Branch 2.0.x**: código em desenvolvimento de uma nova versão. Sofrerá merge na master após aprovação do coordenador.
+* **Branch master**: código estável 2.x;
+* **Branch 2.x.y**: código em desenvolvimento de uma nova versão. Sofrerá merge na master após aprovação do coordenador.
 
 # Pré-requisitos
 
-* Rasa - https://rasa.com/docs/rasa/user-guide/installation/
+* Rasa - https://rasa.com/docs/rasa/installation/
 
-* Rasa X - https://rasa.com/docs/rasa-x/installation-and-setup/install/local-mode/
+* Rasa X - https://rasa.com/docs/rasa-x/installation-and-setup/installation-guide
+
+* Observação - o Rasa X geralmente está atrasado em relação à versão do Rasa Core
 
 # Compilação e Testes do Ifes.talk
 
