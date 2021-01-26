@@ -120,6 +120,57 @@ nlu:
       - Sou o [Paulo](nome_usuario)
       - Eu sou o [Pedro](nome_usuario)
       - Sou [Antônio](nome_usuario)
+  - intent: informar_campus
+    examples: |
+      - sou do campus [Alegre](campus)
+      - Sou do campus [Aracruz](campus)
+      - Meu campus é [Barra de Sao Francisco](campus)	
+      - eu sou de [Cachoeiro de Itapemirim](campus)
+      - sou do [Cariacica](campus)
+      - meu é o [Centro-Serrano](campus)
+      - Sou do campus [Colatina](campus)
+      - Faço parte do campus [Guarapari](campus)
+      - campus [Ibatiba](campus)
+      - campus [Itapina](campus)
+      - sou do campus [Linhares](campus)
+      - sou do campus [Montanha](campus)
+      - sou do campus [Nova Venécia](campus)
+      - sou do campus [Piúma](campus)
+      - sou do campus [Santa Teresa](campus)
+      - sou do campus [Sao Mateus](campus)
+      - sou do campus [Serra](campus)	
+      - sou do campus [Venda Nova do Imigrante](campus)	
+      - sou do campus [Viana](campus)
+      - sou do campus [Vila Velha](campus)
+      - sou do campus [Vitoria](campus)
+      - [alegre](campus)
+      - [aracruz](campus)
+      - [barra de são francisco](campus)
+      - [cachoeiro de itapemirim](campus)
+      - [cariacica](campus)
+      - [centro-serrano](campus)
+      - [colatina](campus)
+      - [guarapari](campus)
+      - [ibatiba](campus)
+      - [itapina](campus)
+      - [linhares](campus)
+      - [montanha](campus)
+      - [nova venécia](campus)
+      - [piúma](campus)	
+      - [santa teresa](campus)
+      - [são mateus](campus)
+      - [serra](campus)
+      - [venda nova do imigrante](campus)
+      - [viana](campus)
+      - [vila velha](campus)
+      - [vitória](campus)
+      - [venda nova](campus)
+      - [são MATEUS](campus)
+      - Sou do campus [serra](campus)
+      - sou do campus [piúma](campus)
+      - sou campus [vila veLHA](campus)
+      - meu campus é [vitoria](campus)
+      - campus [centro-serrano](campus)
   - intent: despedir
     examples: |
       - tchau
@@ -289,12 +340,6 @@ nlu:
       - Algo desconhecido
       - 2 + 3 é o que?
       - cuidando da vida
-  - intent: nlu_fallback
-    examples: |
-      - por exemplo?
-      - e agora?
-      - 4 é o que?
-      - perae
   - intent: minha_religiao
     examples: |
       - qual seu religião?
@@ -718,7 +763,7 @@ nlu:
       - quando acontece a promoção parcial
       - o que acontece se eu ficar reprovado em uma disciplina
       - o que acontece se eu ficar reprovado em duas matérias
-  - intent: dependencia #021
+  - intent: dependencia_condicoes #021
     examples: |
       - Quando fico de [dep]
       - como fico de [dp]
@@ -887,7 +932,7 @@ nlu:
       - [matéria] extra
       - tem alguma [matéria] extra que posso fazer?
       - existe algum tipo de [matéria] extra?
-  - intent: trancamento_matricula #031
+  - intent: trancamento_matricula_sobre #031
     examples: |
       - Sobre trancamento
       - Como funciona o trancamento de matrícula?
@@ -908,7 +953,6 @@ nlu:
       - sobre o trancamento de matricula
   - intent: quando_proibido_trancamento_matricula #032
     examples: |
-      - prazos para fazer a matricula
       - em que circunstâncias não posso trancar a minha matrícula
       - quando não posso trancar a matrícula
       - quando o trancamento de matrícula não é possível
@@ -1867,15 +1911,521 @@ nlu:
       - Que capitulos existem no [rod]
       - Como estão divididos os capítulos no [ROD]?
       - [rod] capitulos
-# synonyms
+### Assuntos gerais
+  - intent: transferencias #1
+    examples: |
+      - Transferências
+      - quero saber como fazer uma [transferência]
+      - como faço uma [transferência]?
+      - tipos de [transferência]?
+      - gostaria de [transferir]
+      - como posso [transferir]?
+      - jeitos de fazer [transferência]
+      - [mudanças]
+      - [Mudança] de algo
+      - quero fazer uma [mudança]
+      - Como posso [mudar]?
+      - Que tipos de [mudança] existem?
+      - Gostaria de fazer uma [mudança]
+  - intent: mudanca_campus #1.4
+    examples: |
+      - [mudanca] campus
+      - [Mudança] de Campus
+      - as [mudanças] de campus
+      - [Mudança] campi
+      - [mudar] de campi
+      - [mudar] de campus
+  - intent: representantes #2
+    examples: |
+      - [Representantes]
+      - [repre de turma]
+      - [representantes de turma]
+      - [líderes de turma]
+      - [líder da turma]
+      - [repres]
+      - os [líderes]
+      - os [representantes da turma]
+  - intent: avaliacoes #3
+    examples: |
+      - Avaliações
+      - as avaliações
+      - provas
+      - prova
+      - sobre avaliações
+      - atividades avaliativas
+      - sobre as provas
+  - intent: pontuacoes #4
+    examples: |
+      - [Pontuações]
+      - Quero saber o total de [pontos]
+      - [Pontos] total
+      - Total de [pontos]
+      - Qual a [pontuação] total?
+      - [Pontuação]
+      - Me fala sobre as [pontuações]
+      - Quantos [pontos] tem?
+  - intent: dependencia #5
+    examples: |
+      - [Dependência]
+      - [dp]
+      - [dep]
+      - [dependencia]
+      - quero conversar sobre a [dependência]
+  - intent: revisao_notas #6
+    examples: |
+      - Revisão da minha [nota]
+      - Não concordo com minha [nota], o que faço?
+      - posso pedir a revisão da minha [nota]
+      - posso pedir a revisão de minhas [notas]?
+      - Revisar [notas]
+      - revisar a [nota] que consegui
+      - como a revisão de [notas] funciona?
+      - é possível eu ter minha [nota] revisada?
+      - gostaria de uma revisão da minha [nota]
+      - n concordo com minha [nota]
+      - oq faço se discordo com minha [nota] 
+      - revisar a [nota] que tive
+      - gostaria de uma revisão da [nota] que obtive
+  - intent: dias_letivos #7
+    examples: |
+      - Dias letivos
+      - dia letivo
+      - fala sobre os dias letivos
+      - quero saber acerca dos dias letivos
+      - gostaria de saber sobre os dias letivos
+      - dias de aula
+      - dias em que tem aula
+  - intent: matricula #8
+    examples: |
+      - Matrícula
+      - matricula
+      - me dá informações sobre a matricula
+      - quero saber sobre a matrícula    
+      - sobre matrícula
+      - gostaria de saber acerca da matrícula    
+      - informações matrícula
+  - intent: trancamento_matricula #8.1.5
+    examples: |
+      - Trancamento de matrícula
+      - trancamento da matricula
+      - trancar matricula
+      - matricula trancamento
+      - trancar a matrícula
+      - quero trancar minha matrícula
+      - sobre trancar uma matrícula
+  - intent: reintegracao_matricula #8.1.7
+    examples: |
+      - Reintegração da matrícla
+      - reintegracao de matricula
+      - reintegracao matrícula
+      - matrícula reintegração
+      - me fala da reintegração da matrícula
+      - voltar atrás no cancelamento da matrícula
+      - cancelar a matrícula e re ativar ele
+      - desfazer o cancelamento da minha matrícula
+      - reintegração
+  - intent: regime_domiciliar #9
+    examples: |
+      - [Regime domiciliar]
+      - [regime domiciliar]?
+      - [atendimento em casa]
+      - afastamento
+      - afastamento do ifes
+      - afastamento da escola
+      - afastamento para ficar em casa
+      - [regime domiciliar] do Ifes
+  - intent: plano_ensino #10
+    examples: |
+      - Plano de ensino
+      - Planos de ensino
+      - Sobre os planos de ensino
+      - preparação do professor
+      - planejamento de ensino
+      - planejamento do professor para as aulas
+      - planejamento das aulas
+      - planejamento de ensino sobre
+      - me fala sobre os planos de ensino
+      - gostaria de informações acerca dos planos de ensino
+  - intent: calendario_academico #11
+    examples: |
+      - calendario academico
+      - Calendário Acadêmico
+      - sobre o calendário academico
+      - me fala sobre o calendario acadêmico
+      - dê-me informações acerca do calendário acadêmico
+      - calendario que prevê as aulas
+      - calendario escolar
+      - calendario do ifes
+      - calendário
+      - calendario de aulas
+  - intent: segunda_chance_avaliacao #12
+    examples: |
+      - Segunda chance [avaliação]
+      - segunda chance de [avaliacao]
+      - refazer [avalicao]
+      - outra [prova]
+      - outra chance de fazer [prova]
+      - segunda chance de [prova]
+      - [prova] 2a chance
+      - [avaliação] segunda chance
+      - outra tentativa de [avaliação]
+      - outra tentativa de [prova]
+      - aplicação de outra [prova]
+      - posso pedir uma outra chance de [prova]?
+      - posso pedir uma [prova] nova?
+  - intent: reuniao_pedagogica #13
+    examples: |
+      - Reuniões Pedagógicas
+      - reuniao pedagogica
+      - Sobre reunioes pedagogicas
+      - me fala sobre as reunioes pedagógicas
+      - reunioes
+      - as reuniões da escola
+      - IFES reunião
+      - informações das reuniões pedagógicas
+      - gostaria de saber sobre as reuniões escolares
+      - reunião escolar
+  - intent: rod #14
+    examples: |
+      - [ROD]
+      - [rod]
+      - [rod2020]
+      - [Rod 2020]
+      - [ROD atual]
+      - [rod] sendo usado atualmente
+      - informações do [rod]
+      - me fala sobre o [rod]
+      - gostaria de saber acerca do [ROD]
+      - pode me dar informações sobre o [rod]?
+      - sobre o [rod]
+# Sistema de chamados
+  - intent: SC_geral
+    examples: |
+      - Sistema de chamados
+      - Como fazer solicitação no sistema de chamados
+      - quero fazer uma solicitação no sistema de chamados
+      - me explica como uso o sistema de chamados
+      - Como faço solicitação de documentos [online]
+      - como conseguir documentos [pelo site]
+  - intent: SC_matricula
+    examples: |
+      - matricula [pela internet]
+      - Matrícula [online]
+      - Como [faço] matricula [online]
+      - Quero fazer matrícula [online]
+      - Quero fazer matricula [pelo site]
+  - intent: SC_terceira_etapa_matricula
+    examples: |
+      - Terceira etapa da matrícula [online]
+      - terceira etapa de matricula [pelo site]
+      - Como [fazer] a terceira etapa da matricula [online]
+      - como [faze] terceira etapa de matricula [pelo sistema de chamados]
+      - como [faser] 3ª etapa de matrícula [online]
+      - Quero fazer tercera etapa de matricula [no sistema de chamados]
+  - intent: SC_cancelamento_matricula
+    examples: |
+      - cancelamento de matricula [online]
+      - cancelamento da matricula [pelo site]
+      - Como [faço] cancelamento de matricula [sistema de chamados]
+      - como [faco] pra cancelar matricula [online]
+      - como [fasso] pra cancelar minha matricula online
+      - Quero cancelar matricula [pelo site]
+      - Quero fazer cancelamento de matrícula [online]
+  - intent: SC_matricula_intercampi
+    examples: |
+      - matricula intercampi [online]
+      - Matrícula Intercampi [pelo academico]
+      - como [faco] matricula intercampi [online]
+      - quero fazer matricula em disciplina intercampi [online]
+      - Quero fazer matrícula intercampi [na internet]
+  - intent: SC_matricula_dependencia
+    examples: |
+      - matricula de dependencia [online]
+      - Matrícula dependencia [online]
+      - como [faço] matrícula de dependência [online]
+      - como [fazer] matrícula na dependência [pelo site]
+      - Quero fazer matricula de dependencia [no sistema de chamados]
+  - intent: SC_ajuste_dp
+    examples: |
+      - Ajuste de dependencia [pelo academico]
+      - como [faço] ajuste de dependência [online]
+      - Quero fazer ajuste de dependencia [online]
+  - intent: SC_matricula_eletiva
+    examples: |
+      - Matrícula eletiva [online]
+      - como [faço] matricula eletiva  [pela internet]
+      - como [faezr] matrícula eletiva [online]
+      - Quero fazer matricula eletiva [no site]
+      - Quero fazer matricula em disciplina eletiva [pela internet]
+  - intent: SC_reabertura_matricula
+    examples: |
+      - reabertura de matricula [pelo site]
+      - reabir matricula [online]
+      - como [fazer] reabertura de matricula [pelo site]
+      - como [faco] reabertura de matrícula [online]
+      - como que [faço] reabertura de matricula [pelo academico]
+      - como reabrir matricula [pelo site]
+      - Quero reabrir a matricula
+      - quero fazer reabertura de matricula
+  - intent: SC_trancamento_matricula
+    examples: |
+      - trancamento de matricula [online]
+      - trancamento da matricula [pelo sistema de chamados]
+      - trancar matricula [online]
+      - como trancar matricula [online]
+      - como [faço] pra trancar matricula [online]
+  - intent: SC_reintegracao_matricula
+    examples: |
+      - reintegração da matrícula [online]
+      - reintegração de matricula [pelo site]
+      - reintegrar matricula [no site]
+      - Como [faco] reintegracao de matricula [no site]
+      - como [fazer] reintegração de matricula [na internet]
+      - quero fazer reintegracao de matricula [online]
+      - quero fazer reintegracao de matricula [pela internet]
+      - quero reintegrar minha matricula [pela internet]
+      - quero fazer reintegração da minha matricula [no sistema de chamados]
+  - intent: SC_atestado_escolaridade
+    examples: |
+      - Atestado de escolaridade [online]
+      - atestado de escolaridade [na internet]
+      - como [faço] atestado de escolaridade [no sistema de chamados]
+      - como [fazer] atestado de escolaridade [online]
+      - como requerir atestado de escolaridade [na internet]
+      - como peço atestado de escolaridade [no site]
+      - quero fazer um atestado de escolaridade [online]
+      - quero pedir um atestado de escolaridade [na internet]
+  - intent: SC_certidao_conclusao
+    examples: |
+      - [Certificado] de conclusão [online]
+      - [certificado] de conclusao [pela internet]
+      - [Certidão] de conclusão [pelo site]
+      - como faco [certificado] de conclusão [online]
+      - como peço [certificado] de conclusão [na internet]
+      - como [faco] pedido de [certidao] de conclusão [pelo academico]
+      - Quero pedir [certificado] de conclusao [no sistema de chamados]
+      - quero pedir [certidão] de conclusao [online]
+      - Quero pedir [certidao] [na internet]
+  - intent: SC_certificado_conclusao_crea
+    examples: |
+      - certificado de conclusao para o crea [no sistema de chamados]
+      - certificado de conclusao crea [online]
+      - como [faso] pra pedir certificado de conclusao para o crea [online]
+      - Como pedir certificado de conclusão para o CREA [no site]
+      - Quero pedir certificado de conclusao para o CREA [no site do ifes]
+  - intent: SC_colacao_grau_especial
+    examples: |
+      - Colação de grau especial [online]
+      - Fazer solicitação de colação de grau especial [no site do ifes]
+      - Como [fazer] solicitação de colação de grau especial [pelo site]
+      - Como solicito colação de grau especial [no sistema de chamados]
+      - Quero solicitar colação de grau especial [no sistema de chamados]
+      - quero fazer pedido de colação de grau especial [pela internet]
+  - intent: SC_colacao_grau
+    examples: |
+      - Colação de grau [online]
+      - [Pedido] de colação de grau [pelo site]
+      - Como [pedir] colação de grau [online]
+      - como fazer pedido de colação de grau [pelo academico]
+      - Como posso requerir colação de grau [online]
+      - Quero [fazer] pedido de colacao de grau [pela internet]
+      - Quero requerir colação de grau [no site]
+  - intent: SC_diploma_historico_final
+    examples: |
+      - Diploma [online]
+      - Diploma e historico final [no sistema de chamados]
+      - Como consigo diploma e histórico final [pela internet]
+      - como consigo diploma [no site]
+      - Como pedir diploma [online]
+      - Como pedir diploma e historico final [pelo site]
+      - Como conseguir diploma e historico final [na internet]
+      - como conseguir o diploma [online]
+      - Quero pedir diploma [online]
+      - Quero pedir o diploma [pelo site]
+      - Quero pedir diploma e historico final [online]
+  - intent: SC_disciplina_intercampi
+    examples: |
+      - Disciplina intercampi [online]
+      - disciplina intercampi [no site]
+      - Como solicitar disciplina intercampi [pelo sistema de chamados]
+      - como sonseguir disciplina intercampi [pela internet]
+      - quero solicitar disciplina intercampi    [na internet]
+  - intent: SC_historico_final
+    examples: |
+      - Hisórico final [online]
+      - historico final [pela internet]
+      - site historico final
+      - onde solicito historico final
+      - onde [peço] historico final
+      - Solicitar historico final [pela internet]
+      - Como solicitar historico final
+      - Como consigo historico final [online]
+      - Quero solicitar historico final [pelo site]
+      - Em qual site posso solicitar historico final?
+      - Quero saber em qual site solicito historico final
+      - Quero solicitar historico final
+  - intent: SC_historico_parcial
+    examples: |
+      - Hisórico parcial [online]
+      - historico parcial [pela internet] 
+      - site historico parcial
+      - onde solicito historico parcial
+      - onde [peço] historico parcial
+      - Solicitar historico parcial [pela internet]
+      - Como solicitar historico parcial
+      - Como consigo historico parcial [online]
+      - Quero solicitar historico parcial [pelo site]
+      - Em qual site posso solicitar historico parcial?
+      - Quero saber em qual site solicito historico parcial
+      - Quero solicitar historico parcial
+  - intent: SC_mudanca_campus_turno_curso
+    examples: |
+      - Mudança de [campus] [online]
+      - Mudança de [turno] [online]
+      - Solicitar mudança de [campus] [pelo site]
+      - Solicitar mudança de [curso] [pelo site]
+      - Pedir mudança de [campus] [pela internet]
+      - Fazer pedido de mudança de [campus] [na internet]
+      - Como solicito mudança de [curso] [no site do ifes]
+      - Como fazer solicitação de mudança de [campus] [pelo site]
+      - Quero mudar de [campi], com faço isso pela internet?
+      - Quero solicitar mudança de [campus] pela internet
+  - intent: SC_mudança_matriz
+    examples: |
+      - [Mudança] Matriz [online]
+      - [Transferência] para uma nova matriz [pelo site]
+      - Fazer [mudança] de matriz [pelo sistema de chamados]
+      - Pedir [transferencia] de matriz [no sistema de chamados]
+      - Solicitar [mudança] de matriz [no site]
+      - Como solicitar [transferencia] de matriz [pela internet]
+      - Como fazer solicitação de [mudança] de matriz [no site]
+      - Como [faço] pra solicitar [transferencia] de matriz [na internet]
+      - Como pedir [mudança] para uma nova matriz [online]
+      - Quero pedir [transferencia] de matriz [na internet]
+      - Quero solicitar [transferencia] de matriz [pelo sistema de chamados]
+      - quero fazer solicitação de [mudança] de matriz [no academico]
+      - Tem como eu fazer [mudança] de matriz [online]?
+  - intent: SC_nada_consta
+    examples: |
+      - Nada consta [online]
+      - Pedido de nada consta [pela internet]
+      - Pedir nada consta [no site]
+      - Pedido de nada consta [online]
+      - Solicitação de nada consta [pelo site]
+      - Solicitar nada consta [na internet]
+      - Teria como eu solicitar nada consta via [internet]?
+      - Tem como eu [fazer] pedido de nada consta [online]?
+      - Como [faço] para solicitar nada consta [pelo site]
+      - Como [faço] pedido de nada consta [online]
+      - Como [fazer] para solicitar nada consta [no site]
+      - Como [fazer] pedido de nada consta [pelo site]
+      - Como consigo [fazer] pedido de nada consta [online]
+      - Como consigo solicitar nada consta [pela internet]
+      - Preciso solicitar nada consta urgente
+      - Quero [fazer] solicitação de nada consta urgente
+      - Quero solicitar nada consta [online]
+      - Quero [fazer] pedido de nada consta [pela internet]
+      - Quero [fazer] solicitação de nada consta [online]
+  - intent: SC_regime_domiciliar
+    examples: |
+      - [Regime domiciliar] [online]
+      - Pedido de [regime domiciliar] [pela internet]
+      - Solicitação de [regime domiciliar] [na internet]
+      - Solicitar [regime domiciliar] [no academico]
+      - Tem como solicitar [regime domiciliar] via [internet]?
+      - Tem como solicitar [regime domiciliar] [pela internet]?
+      - Teria como eu [fazer] pedido de [regime domiciliar] [no sistema]?
+      - [Fazer] pedido de [regime domiciliar] [online]
+      - [Fazer] solicitação de [regime domiciliar] [online]
+      - Como [peço] [regime domiciliar] [online]?
+      - Como [fazer] pedido de [regime domiciliar] [pelo site]
+      - Como solicitar [regime domiciliar] [pela internet]?
+      - Como solicito [regime domiciliar] [pelo academico]?
+      - Preciso solicitar [regime domiciliar] urgente
+      - Quero [fazer] solicitação de [regime domiciliar] urgente
+      - Quero solicitar [regime domiciliar] [online]
+      - Quero [fazer] pedido de [regime domiciliar] [pela internet]
+      - Quero [fazer] solicitação de [regime domiciliar] [online]
+  - intent: SC_revisao_resultado_final
+    examples: |
+      - Revisão do resultado final [online]
+      - Revisão da nota final [online]
+      - Pedido de revisão do resultado final [pela internet]
+      - Solicitação de revisão da nota final [na internet]
+      - Solicitar revisão do resultado final [no academico]
+      - Tem como solicitar revisão do resultado final via [internet]?
+      - Tem como solicitar revisão do resultado final [pela internet]?
+      - Tem como solicitar que revisem meu resultado final [online]?
+      - Teria como eu fazer pedido de revisão do resultado final[no sistema]?
+      - [Fazer] pedido de revisão do resultado final [online]
+      - [Fazer] solicitação de revisão do resultado final [online]
+      - Como [peço] revisão do resultado final [online]?
+      - Como [fazer] pedido de revisão do resultado final [pelo site]
+      - Como solicitar revisão do resultado final [pela internet]?
+      - Como solicito revisão da nota final [pelo academico]?
+      - Preciso solicitar revisão do resultado final urgente
+      - Quero fazer solicitação de revisão do resultado final urgente
+      - Quero solicitar revisão do resultado final [online]
+      - Quero [fazer] pedido de revisão do resultado final [pela internet]
+      - Quero [fazer] solicitação de revisão do resultado final[online]
+  - intent: SC_aproveitamento
+    examples: |
+      - Aproveitamento de disciplinas cursadas [no sistema de chamados]
+      - Aproveitamento de conhecimentos anteriores [no sistema de chamados]
+      - Aproveitamento de experiências anteriores [no sistema de chamados]
+      - Pedido de aproveitamento de disciplinas cursadas [pela internet]
+      - Solicitação de aproveitamento de disciplinas cursadas  [na internet]
+      - Solicitação de aproveitamento de experiências  [na internet]
+      - Solicitação de aproveitamento de conhecimentos  [pela internet]
+      - Solicitar aproveitamento de experiências  [no academico]
+      - Solicitar aproveitamento de disciplinas cursadas  [no academico]
+      - Solicitar aproveitamento de conhecimentos  [no academico]
+      - Tem como solicitar aproveitamento de disciplinas cursadas  via [internet]?
+      - Tem como solicitar aproveitamento de disciplinas cursadas  [pela internet]?
+      - Tem como solicitar aproveitamento de experiência  via [internet]?
+      - Tem como solicitar aproveitamento de conhecimento  [pela internet]?
+      - Teria como eu [fazer] pedido de aproveitamento de disciplinas cursadas  [no sistema]?
+      - Teria como eu [fazer] pedido de aproveitamento de experiencia  [no sistema]?
+      - Teria como eu [fazer] pedido de aproveitamento de conhecimento [no sistema]?
+      - [Fazer] pedido de aproveitamento de disciplinas cursadas [online]
+      - [Fazer] pedido de aproveitamento de conhecimentos anteriores [online]
+      - [Fazer] pedido de aproveitamento de experiências anteriores [online]
+      - [Fazer] solicitação de aproveitamento de disciplinas cursadas [online]
+      - [Fazer] solicitação de aproveitamento de conhecimentos anteriores [online]
+      - [Fazer] solicitação de aproveitamento de experiências anteriores [online]
+      - Como [peço] aproveitamento de disciplinas cursadas [online]?
+      - Como [peço] aproveitamento de conhecimentos anteriores [online]?
+      - Como [peço] aproveitamento de experiencias anteriores [online]?
+      - Como [fazer] pedido de aproveitamento de disciplinas cursadas [pelo site]
+      - Como [fazer] pedido de aproveitamento de conhecimentos anteriores [pelo site]
+      - Como [fazer] pedido de aproveitamento de experiencias anteriores [pelo site]
+      - Como solicitar aproveitamento de disciplinas cursadas [pela internet]?
+      - Como solicitar aproveitamento de conhecimentos anteriores [pela internet]?
+      - Como solicitar aproveitamento de experiencia anteriores [pela internet]?
+      - Como solicito aproveitamento de disciplinas cursadas [pelo academico]?
+      - Como solicito aproveitamento de conhecimentos anteriores [pelo academico]?
+      - Como solicito aproveitamento de experiencias anteriores [pelo academico]?
+      - Quero [fazer] solicitação de aproveitamento de conhecimentos anteriores urgente
+      - Quero [fazer] solicitação de aproveitamento de disciplinas cursadas urgente
+      - Quero [fazer] solicitação de aproveitamento de experiencias anteriores urgente
+      - Quero solicitar aproveitamento de disciplinas cursadas [online]
+      - Quero solicitar aproveitamento de conhecimentos anteriores [online]
+      - Quero solicitar aproveitamento de experiencias anteriores [online]
+      - Quero [fazer] pedido de aproveitamento de disciplinas cursadas [pela internet]
+      - Quero [fazer] pedido de aproveitamento de conhecimentos anteriores [pela internet]
+      - Quero [fazer] pedido de aproveitamento de experiencias anteriores[pela internet]
+## sinonimos
   - synonym: bomdia
     examples: |
-        - b dia
-        - b tarde
-        - b noite
-        - bom dia
-        - boa tarde
-        - boa noite
+      - b dia
+      - b tarde
+      - b noite
+      - bom dia
+      - boa tarde
+      - boa noite
+      - bon dia
+      - boua tarde
+      - boua noite
   - synonym: oi
     examples: |
       - oi
@@ -1888,23 +2438,45 @@ nlu:
     examples: |
       - transferencia
       - transferência
+      - transferensia
       - mudança
+      - mudansa
+      - mudanssa
+      - mudanca
+      - mudamça
       - mudar
       - trocar
       - troco
   - synonym: representante
     examples: |
-      - representante
-      - lider de turma
-      - representante de turma
-      - lider da turma
-      - líder
-      - lider
-      - lideres
+        - representante
+        - representantes
+        - representante de turma
+        - representante da turma
+        - representantes de turma
+        - representantes da turma
+        - repres
+        - repres de turma
+        - repres da turma
+        - líder
+        - lider
+        - lideres
+        - lider de turma
+        - lider da turma
+        - líder de turma
+        - líder da turma
+        - lideres de turma
+        - lideres da turma
+        - líderes de turma
+        - líderes da turma
   - synonym: ead
     examples: |
       - ead
       - estudo a distancia
+      - ensido a distancia
+      - apnp
+      - Atividade pedagógica não presencial
+      - Atividades pedagógicas não presencial
       - modalidade a distancia
       - curso a distancia
       - distancia
@@ -1912,6 +2484,7 @@ nlu:
     examples: |
       - presencial
       - estudo presencial
+      - ensino presencial
       - curso presencial
       - modalidade presencial
   - synonym: turno
@@ -1934,12 +2507,21 @@ nlu:
       - avaliações
       - avaliacões
       - avaliaçoes
+      - avaliasao
+      - avaliasão
+      - avaliacaum
+      - avaliaçaum
+      - avaliassaum
       - teste
       - prova avaliativa
       - trabalho
       - trabalhos
+      - trabalio
+      - trabalios
       - atividade
       - atividades
+      - atvd
+      - atvds
   - synonym: NE
     examples: |
       - necessidades especificas
@@ -1948,6 +2530,10 @@ nlu:
       - necessidades especiais
       - deficit de atencao
       - deficit
+      - hiperatividade
+      - hiperativo
+      - tdah
+      - transtorno do deficit de atenção com hiperatividade
       - autismo
       - sindrome de down
       - especial
@@ -1956,12 +2542,22 @@ nlu:
       - portador de ne
       - portador de necessidades especiais
       - portador de necessidades especificas
+      - portadora de necessidades especiais
+      - portadora de necessidades especificas
+      - portador de deficiencia
+      - portadora de deficiência
+      - PPD
   - synonym: pontuacao
     examples: |
       - pontuacao
       - pontuação
+      - pontuasao
+      - pontuacaum
+      - pontuasaum
+      - pomtuacao
       - pontos
       - ponto
+      - pomto
       - nota
       - notas
       - valor
@@ -1977,6 +2573,7 @@ nlu:
       - reprovar
       - reprovação
       - reprovacao
+      - reprovasao
       - reprovado
       - reprovada
   - synonym: disciplinas
@@ -2030,6 +2627,8 @@ nlu:
       - dependencias
       - dependências
       - depe
+      - dependensia
+      - dependençia
   - synonym: aluno
     examples: |
       - aluno
@@ -2041,6 +2640,8 @@ nlu:
       - renovação da matrícula
       - renovacao da matricula
       - renovação de matricula
+      - renovasao de matricula
+      - revasaum de matricula
       - rematrícula
       - rematricula
       - re-matricula
@@ -2056,15 +2657,33 @@ nlu:
       - regulamento da organizacao didatica
       - rod2020
       - rod 2020
-  # - synonym: 
-  #   examples: |
-  #     -
-  # - synonym: 
-  #   examples: |
-  #     -
-  # - synonym: 
-  #   examples: |
-  #     -
-  # - synonym: 
-  #   examples: |
-  #     -
+  - synonym: online
+    examples: |
+      - online
+      - pelo site
+      - no site
+      - no site do ifes
+      - pela internet
+      - na internet
+      - internet
+      - pelo sistema de chamados
+      - sistema de chamados
+      - no sistema de chamados
+      - pelo academico
+  - synonym: faço
+    examples: |
+      - faso
+      - fasso
+      - faço
+      - faco
+      - fazer
+      - faser
+      - fase
+      - faze
+      - faz
+  - synonym: campus
+    examples: |
+      - campus
+      - campi
+      - curso
+      

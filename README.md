@@ -1,4 +1,4 @@
-# ifes.talk 2.1.0
+# ifes.talk 2.1.10
 ---
 
 Chatbot do Instituto Federal do Espírito Santo - assistente virtual para os alunos, servidores e comunidade em geral. Atualmente em migração para o Rasa
@@ -11,10 +11,6 @@ comunidade em geral.
 # Pré-requisitos
 
 * Rasa - https://rasa.com/docs/rasa/installation/
-
-* Rasa X - https://rasa.com/docs/rasa-x/installation-and-setup/installation-guide
-
-* Observação - o Rasa X geralmente está atrasado em relação à versão do Rasa Core
 
 # Compilação e Testes do Ifes.talk
 
@@ -40,10 +36,6 @@ comunidade em geral.
 
 * rasa run actions --actions actions -vv
 
-4. Executando o Rasa X:
+4. Testando o ifes.talk
 
-* Em outro terminal Powershell, no mesmo diretório principal do projeto, execute **rasa x**
-
-5. Testando o ifes.talk
-
-* Na tela do browser aberta pelo Rasa X você um web chat. No menu esquerdo você terá o local para simular uma conversa com o bot, dentre outras opções como: histórico de conversas, gráficos, treinamento do bot, etc...
+* rasa shell
