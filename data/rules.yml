@@ -18,11 +18,6 @@ rules:
       - nome_usuario: true
   steps:
   - action: utter_cumprimentar_usuario_nome
-<<<<<<< HEAD
-  
-=======
-
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
 
 
   

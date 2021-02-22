@@ -721,9 +721,6 @@ stories:
     - intent: sumario_rod
     - action: utter_sumario_rod
     - action: utter_continuar_conversa
-<<<<<<< HEAD
-
-=======
 - story: Processos pedagógicos e didáticos #091
   steps:    
     - intent: processos_pedagogicos_e_didaticos
@@ -754,7 +751,6 @@ stories:
     - intent: educacao_especial
     - action: utter_educacao_especial
     - action: utter_continuar_conversa    
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
 ### Assuntos gerais
 - story: Assunto 1
   steps:
@@ -945,11 +941,7 @@ stories:
     - action: utter_continuar_conversa
 - story: Sistema de Chamados Mudança matriz
   steps:
-<<<<<<< HEAD
-    - intent: SC_mudança_matriz
-=======
     - intent: SC_mudanca_matriz
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
     - action: utter_sistema_chamados
     - action: utter_continuar_conversa
 - story: Sistema de Chamados Nada consta
@@ -972,9 +964,6 @@ stories:
     - intent: SC_aproveitamento
     - action: utter_sistema_chamados
     - action: utter_continuar_conversa
-<<<<<<< HEAD
-    
-=======
 - story: interactive_story_1
   steps:
   - intent: cumprimento
@@ -986,4 +975,3 @@ stories:
     - nome_usuario: Paulo
   - action: utter_nao_entendi
   - action: action_uncheck_uncheck_all
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947

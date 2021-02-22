@@ -472,15 +472,12 @@ nlu:
       - mal
       - tudo está ruim
       - Estou triste
-<<<<<<< HEAD
-=======
   - intent: info_ifes
     examples: |
       - O que é [ifes]?
       - o que é [Instituto federal do Espírito santo]?
       - gostaria de saber o que significa [ifes]
       - ifes 
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
 # intents do ROD
   - intent: transferencia_de_outra_escola #001
     examples: |
@@ -543,11 +540,7 @@ nlu:
       - como faço para estudar em casa
       - quero estudar em casa em vez de na escola
       - posso [estudar a distância] de algum jeito?
-<<<<<<< HEAD
-  - intent: mudanca_campus_geral #006
-=======
   - intent: mudanca_campus #006
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
     examples: |
       - Posso [mudar] de campus?
       - quero estudar em outro campus
@@ -561,8 +554,6 @@ nlu:
       - gostaria de [transferir] de campus
       - sobre [mudar] de campus
       - [transferência] entre os ifes
-<<<<<<< HEAD
-=======
       - Qnd [mudar] de campus
       - Quando [mudar] de campus?
       - Quando posso [mudar] de campus?
@@ -578,7 +569,6 @@ nlu:
       - [Mudança] campi
       - [mudar] de campi
       - [mudar] de campus
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
   - intent: mudanca_turno #007
     examples: |
       - [Mudança] de [turno]
@@ -596,20 +586,6 @@ nlu:
       - como estudar de [noite]
       - posso estudar no [matutino]?
       - tem como eu [trocar] para o [período noturno]?
-<<<<<<< HEAD
-  - intent: mudanca_campus_quando #008
-    examples: |
-      - Qnd [mudar] de campus
-      - Quando [mudar] de campus?
-      - Quando posso [mudar] de campus?
-      - quando posso pedir a [mudança] de campus?
-      - fale quando posso [trocar] meu campus
-      - quando poderei [trocar] de campus?
-      - quando posso [transferir] de campus
-      - [transferência] de campus quando
-      - datas em que posso [transferir] de campus
-=======
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
   - intent: mudanca_turma #009
     examples: |
       - [Mudança] de turma
@@ -669,18 +645,6 @@ nlu:
       - Conteúdos [avaliações]
   - intent: conteudos_avaliacoes_necessidadades_especificas #013
     examples: |
-<<<<<<< HEAD
-      - [Avaliação] escolar [NE]
-      - O que é considerado na [avaliação] dos alunos com [necessidades específicas]?
-      - [avaliação] escolar [necessidades específicas]
-      - [avaliação] escolar de alunos com [necessidades específicas]
-      - o que deve ser cobrado na [avaliação] de alunos com [necessidades específicas]
-      - o que é cobrado nas [provas] de alunos com [necessidades especiais]
-      - o que é considerado nas [provas] de alunos com [necessidades específicas]
-      - o que é considerado nos [trabalhos] de alunos com [necessidades específicas]
-      - como funcionam [avaliações] para aqueles com [necessidades específicas]?
-      - Como [avaliações] funcionam para pessoas com [necessidades específicas]
-=======
      - [Avaliação] escolar [NE]
      - O que é considerado na [avaliação] dos [alunos] com [necessidades específicas]?
      - [avaliação] escolar [necessidades específicas]
@@ -691,7 +655,6 @@ nlu:
      - o que é considerado nos [trabalhos] de [alunos] com [necessidades específicas]
      - como funcionam [avaliações] para aqueles com [necessidades específicas]?
      - Como [avaliações] funcionam para pessoas com [necessidades específicas]
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
   - intent: quantidade_avaliacoes #014
     examples: |
       - Quantidade máxima [provas]
@@ -981,11 +944,8 @@ nlu:
       - existe algum tipo de [matéria] extra?
   - intent: trancamento_matricula_sobre #031
     examples: |
-<<<<<<< HEAD
-=======
       - como o [estudante] pode trancar matricula
       - como o [discente] tranca o curso
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
       - Sobre trancamento
       - Como funciona o trancamento de matrícula?
       - como tranco a minha matrícula
@@ -1005,10 +965,7 @@ nlu:
       - sobre o trancamento de matricula
   - intent: quando_proibido_trancamento_matricula #032
     examples: |
-<<<<<<< HEAD
-=======
       - quando o [discente] não pode cancelar matricula
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
       - em que circunstâncias não posso trancar a minha matrícula
       - quando não posso trancar a matrícula
       - quando o trancamento de matrícula não é possível
@@ -1018,12 +975,6 @@ nlu:
       - condições para trancar matrícula
   - intent: cancelamento_matricula #033
     examples: |
-<<<<<<< HEAD
-=======
-      - cancelamento de matricula do [discente]
-      - por que o [aluno] tem a matricula cancelada
-      - por que motivo a matricula do [estudante] pode ser cancelada
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
       - Motivos cancelamento matrícula
       - Posso ter minha matrícula cancelada?
       - quais motivos causam o cancelamento da minha matrícula
@@ -1071,19 +1022,11 @@ nlu:
       - documentos necessários para a minha matrícula
       - quais documentos preciso para fazer a matrícula
       - documentos necessários para realizar a matrícula
-<<<<<<< HEAD
-      - documentos que o aluno precisa para fazer a matrícula
-      - documentos que o aluno precisa ter para realizar a matrícula
-      - quais os documentos necessários para fazer a matrícula
-      - Quais documentos devo levar na hora de fazer minha matrícula?
-      - Que documentos são usadas para realizar minha matrícula?
-=======
       - documentos que o [aluno] precisa para fazer a matrícula
       - documentos que o [aluno] precisa ter para realizar a matrícula
       - quais os documentos necessários para fazer a matrícula
       - Quais documentos devo levar na hora de fazer minha matrícula?
       - Que documentos são usados para realizar minha matrícula?
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
   - intent: chamada_suplentes #036
     examples: |
       - Chamada de suplentes
@@ -1114,12 +1057,6 @@ nlu:
       - quando é oficial que sou um [aluno]?
   - intent: prazo_matricula #038
     examples: |
-<<<<<<< HEAD
-=======
-      - prazo para o [aluno] fazer matrícula
-      - qual prazo o [estudante] tem para fazer matrícula
-      - Qual o período para os [estudantes] fazerem matricula
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
       - Prazo para efetivar
       - Prazo p/ efetivar
       - Qual prazo tenho para efetivar minha matrícula?
@@ -1138,12 +1075,6 @@ nlu:
       - ate quando posso fazer matricula
   - intent: renovacao_matricula #039
     examples: |
-<<<<<<< HEAD
-=======
-      - a rematricula do [aluno] é automática?
-      - o [discente] precisa fazer [rematricula]?
-      - o [estudante] precisa fazer [renovação de matricula]?
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
       - Sobre renovação
       - [renovação da matricula]
       - Como é feita a [rematrícula]?
@@ -1266,12 +1197,9 @@ nlu:
       - função do [rod]
       - para o que serve o [ROD]?
       - o porque da existência do [rod]
-<<<<<<< HEAD
-=======
       - [normas]
       - [regulamento]
       - [normas e regulamento]
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
   - intent: plano_ensino_contem #047
     examples: |
       - Conteúdo plano de ensino
@@ -1318,13 +1246,6 @@ nlu:
       - realizar o calculo do meu coeficiente
       - coeficiente
       - como eu posso saber meu coeficiente de rendimento?
-<<<<<<< HEAD
-=======
-      - como eu posso saber meu cr?
-      - cr
-      - Qual meu cr?
-      - Como calcular o cr?
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
   - intent: oferta_cursos #050
     examples: |
       - oferta cursos
@@ -1340,8 +1261,6 @@ nlu:
       - oferecimento de cursos
       - como os cursos podem funcionar?
       - os cursos estao divididos em [semestres], [bimestres] ou [trimestres]?
-<<<<<<< HEAD
-=======
       - subsequente
       - concomitante
       - cursos subsequentes
@@ -1353,7 +1272,6 @@ nlu:
       - tipos de curso
       - eja
       - educação de jovens e adultos
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
   - intent: tempo_oferta_aulas #051
     examples: |
       - Turnos aulas
@@ -1418,23 +1336,16 @@ nlu:
       - Quantas vagas são oferecidas?
       - Quantas vagas tem para entrar no ifes?
       - quantidade de vagas
-<<<<<<< HEAD
-      - quantidade de vagas disponibilizadas para ser um aluno do IFES
-=======
       - quantidade de vagas disponibilizadas para ser um [aluno] do IFES
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
       - Quantas vagas tem cada curso?
       - Como posso saber quantas vagas tem para um curso?
   - intent: preenchimento_vagas_discentes_ifes #055
     examples: |
-<<<<<<< HEAD
-=======
       - ordem de prioridade no preenchimento de vagas
       - ordem de prioridade para preenchimento de vaga
       - Quero saber qual a ordem de preenchimento de vagas ociosas
       - preenchimento de vagas ociosas para [discentes]
       - preenchimento de vagas ociosas por [discente]
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
       - vagas ociosas preenchimento
       - preenchimento de vagas ociosas
       - como preencher as vagas vazias se sou um [aluno] do ifes
@@ -1459,11 +1370,8 @@ nlu:
       - oq eh a matriculacao no ifes?
   - intent: reintegracao_matricula_sobre #057
     examples: |
-<<<<<<< HEAD
-=======
       - Como o [aluno] pode desfazer cancelamento de matricula?
       - O [estudante] pode reativar a matricula?
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
       - O que é a reintegração da matrícula
       - Oq exatamente eh a reintegração da matrícula?
       - Definição reintegração da matrícula
@@ -1478,19 +1386,11 @@ nlu:
       - Posso pedir a reintegração de matrícula?
       - Quando posso desfazer o cancelamento da minha matrícula?
       - Condições para voltar atrás no cancelamento da minha matrícula
-<<<<<<< HEAD
-      - Se cancelaram minha matrícula, posso voltar a ser aluno?
-      - em que situações posso voltar a ser aluno ifes
-      - em que situações posso pedir a reintegração da minha matrícula?
-      - Se minha matricula foi cancelada, posso voltar atrás?
-      - É possível voltar a ser aluno IFES após cancelado por alguma razao?
-=======
       - Se cancelaram minha matrícula, posso voltar a ser [aluno]?
       - em que situações posso voltar a ser [aluno] ifes
       - em que situações posso pedir a reintegração da minha matrícula?
       - Se minha matricula foi cancelada, posso voltar atrás?
       - É possível voltar a ser [aluno] IFES após cancelado por alguma razao?
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
       - Se eu reprovar por falta, posso continuar estudando?
       - Se eu não frequentar aulas o suficiente, posso continuar com minha matrícula?
       - Quando pode fazer a reintegração da matrícula
@@ -1526,29 +1426,17 @@ nlu:
       - Segunda chance de [avaliação] por um discente
   - intent: estudantes_distancia_avaliacao_rendimento #061
     examples: |
-<<<<<<< HEAD
-      - avaliacao de rendimento de alunos a distancia
-=======
       - Avaliação de rendimento de [estudantes] a distância
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
       - Avaliação de rendimento de estudantes a distância
       - Avaliação do rendimento daqueles estudando a distância
       - Como é avaliado o rendimento de quem estuda a distância?
       - Como é feito a avaliação do rendimento de quem estuda de modo EAD
       - Para aqueles estudando em casa como é a avaliação de rendimento
-<<<<<<< HEAD
-      - Como é avaliado o quanto estão indo bem os alunos estudando a distância?
-      - Rendimento dos alunos estudando a distancia
-      - Para quem estuda de casa, como seus rendimentos sao avaliados?
-      - Quanto a aqueles que estudam a distancia, como é medido seu rendimento?
-      - Avaliação de o quao bem estao os alunos a distancia
-=======
       - Como é avaliado o quanto estão indo bem os [alunos] estudando a distância?
       - Rendimento dos [alunos] estudando a distancia
       - Para quem estuda de casa, como seus rendimentos sao avaliados?
       - Quanto a aqueles que estudam a distancia, como é medido seu rendimento?
       - Avaliação de o quao bem estao os [alunos] a distancia
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
       - Como determinam o quanto alguem esta indo bem estudando ead?
   - intent: pontuacao_trimestral #062
     examples: |
@@ -1665,11 +1553,7 @@ nlu:
       - Sobre as decisões de [reprovação] na última reunião pedagógica
       - Como funciona a decisão de [reprovar] ou não no final do ano?
       - No final do ano, como decidem quem passar ou n?
-<<<<<<< HEAD
-      - Como funcionam as decisões finais de [reprovar] ou não um aluno?
-=======
       - Como funcionam as decisões finais de [reprovar] ou não um [aluno]?
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
       - Se eu tirar abaixo de 60 na final posso passar?
       - Tem como eu passar no final do ano com uma [nota] menor que 60?
       - e se minha [nota] final for menor que 60, posso não [reprovar]?
@@ -1725,15 +1609,6 @@ nlu:
       - como funciona a monitoria
       - o que acontece na monitoria?
       - Distribuição de vagas da monitoria
-<<<<<<< HEAD
-      - alunos das aula para outros alunos
-      - alunos ajudando o professor
-      - como os alunos podem ajudar o professor a ensinar?
-      - auxílio de ensino ao prof.    
-      - vagas da monitoria funcionam como?
-      - como um aluno pode dar aula para outro aluno?
-      - os alunos com facilidade em alguma matéria podem ajudar aqueles que são ruins na mesma matéria?    
-=======
       - [alunos] dar aula para outros [alunos]
       - [alunos] ajudando o professor
       - como os [alunos] podem ajudar o professor a ensinar?
@@ -1741,7 +1616,6 @@ nlu:
       - vagas da monitoria funcionam como?
       - como um [aluno]pode dar aula para outro [aluno]?
       - os [alunos] com facilidade em alguma matéria podem ajudar aqueles que são ruins na mesma matéria?    
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
   - intent: estagio #073
     examples: |
       - estágio
@@ -2071,8 +1945,6 @@ nlu:
       - Que capitulos existem no [rod]
       - Como estão divididos os capítulos no [ROD]?
       - [rod] capitulos
-<<<<<<< HEAD
-=======
   - intent: processos_pedagogicos_e_didaticos #091
     examples: |
       - Processos [pedagógicos]
@@ -2155,7 +2027,6 @@ nlu:
       - didática especial
       - didatica especial
       - pedagogia especial
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
 ### Assuntos gerais
   - intent: transferencias #1
     examples: |
@@ -2172,17 +2043,6 @@ nlu:
       - Como posso [mudar]?
       - Que tipos de [mudança] existem?
       - Gostaria de fazer uma [mudança]
-<<<<<<< HEAD
-  - intent: mudanca_campus #1.4
-    examples: |
-      - [mudanca] campus
-      - [Mudança] de Campus
-      - as [mudanças] de campus
-      - [Mudança] campi
-      - [mudar] de campi
-      - [mudar] de campus
-=======
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
   - intent: representantes #2
     examples: |
       - [Representantes]
@@ -2357,11 +2217,8 @@ nlu:
       - como conseguir documentos [pelo site]
   - intent: SC_matricula
     examples: |
-<<<<<<< HEAD
-=======
       - Como o [discente] pode fazer matrícula [online]?
       - Como o [aluno] pode realizar matricula [online]
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
       - matricula [pela internet]
       - Matrícula [online]
       - Como [faço] matricula [online]
@@ -2369,11 +2226,8 @@ nlu:
       - Quero fazer matricula [pelo site]
   - intent: SC_terceira_etapa_matricula
     examples: |
-<<<<<<< HEAD
-=======
       - Como o [estudante] realiza matricula [no site]
       - Como o [aluno] pode realizar terceira etapa de matricula [online]
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
       - Terceira etapa da matrícula [online]
       - terceira etapa de matricula [pelo site]
       - Como [fazer] a terceira etapa da matricula [online]
@@ -2382,11 +2236,8 @@ nlu:
       - Quero fazer tercera etapa de matricula [no sistema de chamados]
   - intent: SC_cancelamento_matricula
     examples: |
-<<<<<<< HEAD
-=======
       - Como o [aluno] pode solicitar cancelamento de matricula [na internet]
       - Como o [estudante] realiza cancelamento de matricula [no site]
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
       - cancelamento de matricula [online]
       - cancelamento da matricula [pelo site]
       - Como [faço] cancelamento de matricula [sistema de chamados]
@@ -2396,11 +2247,8 @@ nlu:
       - Quero fazer cancelamento de matrícula [online]
   - intent: SC_matricula_intercampi
     examples: |
-<<<<<<< HEAD
-=======
       - Como o [aluno] pode fazer matricula intercampi [na internet]
       - Como o [estudante] realiza matricula intercampi [no site]
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
       - matricula intercampi [online]
       - Matrícula Intercampi [pelo academico]
       - como [faco] matricula intercampi [online]
@@ -2408,11 +2256,8 @@ nlu:
       - Quero fazer matrícula intercampi [na internet]
   - intent: SC_matricula_dependencia
     examples: |
-<<<<<<< HEAD
-=======
       - Como o [aluno] pode fazer matricula de dependencia [na internet]
       - Como o [estudante] realiza matricula de dependencia [no site]
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
       - matricula de dependencia [online]
       - Matrícula dependencia [online]
       - como [faço] matrícula de dependência [online]
@@ -2420,21 +2265,15 @@ nlu:
       - Quero fazer matricula de dependencia [no sistema de chamados]
   - intent: SC_ajuste_dp
     examples: |
-<<<<<<< HEAD
-=======
       - Como o [aluno] pode fazer ajuste de dependencia [na internet]
       - Como o [estudante] realiza ajuste de dependencia [no site]
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
       - Ajuste de dependencia [pelo academico]
       - como [faço] ajuste de dependência [online]
       - Quero fazer ajuste de dependencia [online]
   - intent: SC_matricula_eletiva
     examples: |
-<<<<<<< HEAD
-=======
       - Como o [aluno] pode fazer matricula eletiva [na internet]
       - Como o [estudante] realiza matricula eletiva [no site]
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
       - Matrícula eletiva [online]
       - como [faço] matricula eletiva  [pela internet]
       - como [faezr] matrícula eletiva [online]
@@ -2442,11 +2281,8 @@ nlu:
       - Quero fazer matricula em disciplina eletiva [pela internet]
   - intent: SC_reabertura_matricula
     examples: |
-<<<<<<< HEAD
-=======
       - Como o [aluno] pode fazer reabertura de matricula [na internet]
       - Como o [estudante] pode realizar reabertura de matricula [no site]
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
       - reabertura de matricula [pelo site]
       - reabir matricula [online]
       - como [fazer] reabertura de matricula [pelo site]
@@ -2457,11 +2293,8 @@ nlu:
       - quero fazer reabertura de matricula
   - intent: SC_trancamento_matricula
     examples: |
-<<<<<<< HEAD
-=======
       - Como o [aluno] pode fazer trancamento de matricula [na internet]
       - Como o [estudante] pode realizar trancamento de matricula [no site]
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
       - trancamento de matricula [online]
       - trancamento da matricula [pelo sistema de chamados]
       - trancar matricula [online]
@@ -2469,11 +2302,8 @@ nlu:
       - como [faço] pra trancar matricula [online]
   - intent: SC_reintegracao_matricula
     examples: |
-<<<<<<< HEAD
-=======
       - Como o [aluno] pode fazer reintegração de matricula [na internet]
       - Como o [estudante] pode realizar reintegração de matricula [no site]
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
       - reintegração da matrícula [online]
       - reintegração de matricula [pelo site]
       - reintegrar matricula [no site]
@@ -2485,11 +2315,8 @@ nlu:
       - quero fazer reintegração da minha matricula [no sistema de chamados]
   - intent: SC_atestado_escolaridade
     examples: |
-<<<<<<< HEAD
-=======
       - Como o [aluno] solicita atestado de escolaridade [na internet]
       - Como o [estudante] pode fazer atestado de escolaridade [no site]
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
       - Atestado de escolaridade [online]
       - atestado de escolaridade [na internet]
       - como [faço] atestado de escolaridade [no sistema de chamados]
@@ -2500,11 +2327,8 @@ nlu:
       - quero pedir um atestado de escolaridade [na internet]
   - intent: SC_certidao_conclusao
     examples: |
-<<<<<<< HEAD
-=======
       - Como o [aluno] solicita certidão de conclusão [na internet]
       - Como o [estudante] pode fazer certidão de conclusão [no site]
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
       - [Certificado] de conclusão [online]
       - [certificado] de conclusao [pela internet]
       - [Certidão] de conclusão [pelo site]
@@ -2516,11 +2340,8 @@ nlu:
       - Quero pedir [certidao] [na internet]
   - intent: SC_certificado_conclusao_crea
     examples: |
-<<<<<<< HEAD
-=======
       - Como o [aluno] solicita certificado de conclusão crea [na internet]
       - Como o [estudante] pode fazer certificado de conclusão para o crea [no site]
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
       - certificado de conclusao para o crea [no sistema de chamados]
       - certificado de conclusao crea [online]
       - como [faso] pra pedir certificado de conclusao para o crea [online]
@@ -2528,11 +2349,8 @@ nlu:
       - Quero pedir certificado de conclusao para o CREA [no site do ifes]
   - intent: SC_colacao_grau_especial
     examples: |
-<<<<<<< HEAD
-=======
       - Como o [aluno] solicita colação de grau especial [na internet]
       - Como o [estudante] pode solicitar colação de grau especial [no site]
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
       - Colação de grau especial [online]
       - Fazer solicitação de colação de grau especial [no site do ifes]
       - Como [fazer] solicitação de colação de grau especial [pelo site]
@@ -2541,11 +2359,8 @@ nlu:
       - quero fazer pedido de colação de grau especial [pela internet]
   - intent: SC_colacao_grau
     examples: |
-<<<<<<< HEAD
-=======
       - Como o [aluno] solicita colação de grau [na internet]
       - Como o [estudante] pode solicitar colação de grau [no site]
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
       - Colação de grau [online]
       - [Pedido] de colação de grau [pelo site]
       - Como [pedir] colação de grau [online]
@@ -2555,11 +2370,8 @@ nlu:
       - Quero requerir colação de grau [no site]
   - intent: SC_diploma_historico_final
     examples: |
-<<<<<<< HEAD
-=======
       - Como o [aluno] pode solicitar diploma e historico final [na internet]
       - Como o [estudante] solicita diploma [no site]
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
       - Diploma [online]
       - Diploma e historico final [no sistema de chamados]
       - Como consigo diploma e histórico final [pela internet]
@@ -2573,11 +2385,8 @@ nlu:
       - Quero pedir diploma e historico final [online]
   - intent: SC_disciplina_intercampi
     examples: |
-<<<<<<< HEAD
-=======
       - Como o [aluno] pode solicitar disciplina intercampi [na internet]
       - Como o [estudante] solicita disciplina intercampi [no site]
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
       - Disciplina intercampi [online]
       - disciplina intercampi [no site]
       - Como solicitar disciplina intercampi [pelo sistema de chamados]
@@ -2585,11 +2394,8 @@ nlu:
       - quero solicitar disciplina intercampi    [na internet]
   - intent: SC_historico_final
     examples: |
-<<<<<<< HEAD
-=======
       - Como o [aluno] pode solicitar historico final [na internet]
       - Como o [estudante] solicita historico final [no site]
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
       - Hisórico final [online]
       - historico final [pela internet]
       - site historico final
@@ -2604,11 +2410,8 @@ nlu:
       - Quero solicitar historico final
   - intent: SC_historico_parcial
     examples: |
-<<<<<<< HEAD
-=======
       - Como o [aluno] pode solicitar historico parcial [na internet]
       - Como o [estudante] solicita historico parcial [no site]
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
       - Hisórico parcial [online]
       - historico parcial [pela internet] 
       - site historico parcial
@@ -2623,11 +2426,8 @@ nlu:
       - Quero solicitar historico parcial
   - intent: SC_mudanca_campus_turno_curso
     examples: |
-<<<<<<< HEAD
-=======
       - Como o [aluno] pode solicitar mudança de [turno] [na internet]
       - Como o [estudante] solicita mudança de [curso] [no site]
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
       - Mudança de [campus] [online]
       - Mudança de [turno] [online]
       - Solicitar mudança de [campus] [pelo site]
@@ -2638,15 +2438,10 @@ nlu:
       - Como fazer solicitação de mudança de [campus] [pelo site]
       - Quero mudar de [campi], com faço isso pela internet?
       - Quero solicitar mudança de [campus] pela internet
-<<<<<<< HEAD
-  - intent: SC_mudança_matriz
-    examples: |
-=======
   - intent: SC_mudanca_matriz
     examples: |
       - Como o [aluno] pode solicitar mudança de matriz [na internet]
       - Como o [estudante] solicita mudança de matriz [no site]
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
       - [Mudança] Matriz [online]
       - [Transferência] para uma nova matriz [pelo site]
       - Fazer [mudança] de matriz [pelo sistema de chamados]
@@ -2662,11 +2457,8 @@ nlu:
       - Tem como eu fazer [mudança] de matriz [online]?
   - intent: SC_nada_consta
     examples: |
-<<<<<<< HEAD
-=======
       - Como o [aluno] pode solicitar nada consta [na internet]
       - Como o [estudante] solicita nada consta [no site]
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
       - Nada consta [online]
       - Pedido de nada consta [pela internet]
       - Pedir nada consta [no site]
@@ -2688,11 +2480,8 @@ nlu:
       - Quero [fazer] solicitação de nada consta [online]
   - intent: SC_regime_domiciliar
     examples: |
-<<<<<<< HEAD
-=======
       - Como o [aluno] pode solicitar [regime domiciliar] [na internet]
       - Como o [estudante] solicita [regime domiciliar] [no site]
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
       - [Regime domiciliar] [online]
       - Pedido de [regime domiciliar] [pela internet]
       - Solicitação de [regime domiciliar] [na internet]
@@ -2713,11 +2502,8 @@ nlu:
       - Quero [fazer] solicitação de [regime domiciliar] [online]
   - intent: SC_revisao_resultado_final
     examples: |
-<<<<<<< HEAD
-=======
       - Como o [aluno] pode pedir revisão do resultado final [na internet]
       - Como o [estudante] solicita revisao de resultado final [no site]
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
       - Revisão do resultado final [online]
       - Revisão da nota final [online]
       - Pedido de revisão do resultado final [pela internet]
@@ -2740,11 +2526,8 @@ nlu:
       - Quero [fazer] solicitação de revisão do resultado final[online]
   - intent: SC_aproveitamento
     examples: |
-<<<<<<< HEAD
-=======
       - Como o [aluno] pode pedir aproveitamento de disciplina [na internet]
       - Como o [estudante] solicita aproveitamento de disciplina [no site]
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
       - Aproveitamento de disciplinas cursadas [no sistema de chamados]
       - Aproveitamento de conhecimentos anteriores [no sistema de chamados]
       - Aproveitamento de experiências anteriores [no sistema de chamados]
@@ -2789,13 +2572,10 @@ nlu:
       - Quero [fazer] pedido de aproveitamento de disciplinas cursadas [pela internet]
       - Quero [fazer] pedido de aproveitamento de conhecimentos anteriores [pela internet]
       - Quero [fazer] pedido de aproveitamento de experiencias anteriores[pela internet]
-<<<<<<< HEAD
-=======
 
 
 
 
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
 ## sinonimos
   - synonym: bomdia
     examples: |
@@ -2831,28 +2611,6 @@ nlu:
       - troco
   - synonym: representante
     examples: |
-<<<<<<< HEAD
-        - representante
-        - representantes
-        - representante de turma
-        - representante da turma
-        - representantes de turma
-        - representantes da turma
-        - repres
-        - repres de turma
-        - repres da turma
-        - líder
-        - lider
-        - lideres
-        - lider de turma
-        - lider da turma
-        - líder de turma
-        - líder da turma
-        - lideres de turma
-        - lideres da turma
-        - líderes de turma
-        - líderes da turma
-=======
       - representante
       - representantes
       - representante de turma
@@ -2873,7 +2631,6 @@ nlu:
       - lideres da turma
       - líderes de turma
       - líderes da turma
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
   - synonym: ead
     examples: |
       - ead
@@ -3036,17 +2793,11 @@ nlu:
       - dependençia
   - synonym: aluno
     examples: |
-<<<<<<< HEAD
-      - aluno
-      - estudante
-      - alunos
-=======
       - discente
       - discentes
       - aluno
       - alunos
       - estudante
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
       - estudantes
   - synonym: rematrícula
     examples: |
@@ -3070,12 +2821,9 @@ nlu:
       - regulamento da organizacao didatica
       - rod2020
       - rod 2020
-<<<<<<< HEAD
-=======
       - normas
       - regulamento
       - normas e regulamento
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
   - synonym: online
     examples: |
       - online
@@ -3105,7 +2853,3 @@ nlu:
       - campus
       - campi
       - curso
-<<<<<<< HEAD
-      
-=======
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947

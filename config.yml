@@ -4,8 +4,7 @@ language: pt
 
 pipeline:
    - name: "WhitespaceTokenizer"
-     "intent_tokenization_flag":
-      False
+     "intent_tokenization_flag": False
      "intent_split_symbol": "_"
      "token_pattern": None
    - name: RegexFeaturizer
@@ -33,8 +32,4 @@ policies:
    - name: RulePolicy
      core_fallback_threshold: 0.4
      core_fallback_action_name: "utter_nao_entendi"
-<<<<<<< HEAD
      enable_fallback_prediction: True
-=======
-     enable_fallback_prediction: True
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947

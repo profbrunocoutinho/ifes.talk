@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-version: "2.0"
-=======
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
@@ -25,11 +21,7 @@ intents:
 - representantes_reunioes
 - representantes_da_turma
 - mudanca_modalidade_presencial_distancia
-<<<<<<< HEAD
-- mudanca_campus_geral
-=======
 - mudanca_campus
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
 - mudanca_turno
 - mudanca_turma
 - mudanca_curso
@@ -165,20 +157,13 @@ intents:
 - SC_historico_final
 - SC_historico_parcial
 - SC_mudanca_campus_turno_curso
-<<<<<<< HEAD
-- SC_mudança_matriz
-=======
 - SC_mudanca_matriz
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
 - SC_nada_consta
 - SC_regime_domiciliar
 - SC_revisao_resultado_final
 - SC_aproveitamento
-<<<<<<< HEAD
-=======
 - info_ifes
 - concomitante_e_eja
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
 
 entities:
 - campus
@@ -507,14 +492,9 @@ responses:
   utter_rod:
   - text: "De qual das seguintes opções sobre o ROD você gostaria de saber mais sobre?\n\nO que é o ROD\nValidade do ROD atual\nO capítulo do ROD que fala sobre o ROD\nSumário do ROD atual\n"
   utter_sistema_chamados:
-<<<<<<< HEAD
-  - text: "Você pode fazer as seguintes solicitações no Sistema de Chamados:\n- Terceira Etapa de Matrícula,\n- Cancelamento de Matrícula,\n- Matrícula Intercampi,\n- Matrícula/Ajuste de dependência para cursos técnicos concomitantes/subsequentes,\n- Matrícula Eletiva,\n- Reabertura de matrícula,\n- Reintegração de matrícula,\n- Trancamento de matrícula,\n- Atestado de escolaridade,\n- Certidão ou Certificado de conclusão,\n- Certificado de conclusão para o CREA,\n- Colação de grau especial (em casos de urgência, conforme o ROD),\n- Colação de grau regular,\n- Diploma e Histórico Final,\n- Disciplinas Intercampi,\n- Histórico final,\n- Histórico parcial,\n- Mudança de campus e/ou curso,\n- Mudança de turno,\n- Mudança para nova matriz,\n- Nada Consta para docente,\n- Regime Domiciliar,\n- Revisão de resultado final,\n- Solicitação de aproveitamento de conhecimentos e experiências anteriores.\nPara fazer essas e/ou outras solicitações, acesse o site do Sistema de Chamados e faça login com o usuário e senha utilizados no Acadêmico: <https://suporte.ifes.edu.br/ensino/front/helpdesk.public.php>.\nEm caso de dúvidas, acesse o manual no link <https://www.serra.ifes.edu.br/images/stories/Navegar_Perfil/Aluno/Manual_Sistemas_de_Chamados_CRA_-_Usuario.pdf>"
-
-=======
   - text: "Você pode fazer as seguintes solicitações no Sistema de Chamados:\n- Terceira Etapa de Matrícula,\n- Cancelamento de Matrícula,\n- Matrícula Intercampi,\n- Matrícula/Ajuste de dependência para cursos técnicos concomitantes/subsequentes,\n- Matrícula Eletiva,\n- Reabertura de matrícula,\n- Reintegração de matrícula,\n- Trancamento de matrícula,\n- Atestado de escolaridade,\n- Certidão ou Certificado de conclusão,\n- Certificado de conclusão para o CREA,\n- Colação de grau especial (em casos de urgência, conforme o ROD),\n- Colação de grau regular,\n- Diploma e Histórico Final,\n- Disciplinas Intercampi,\n- Histórico final,\n- Histórico parcial,\n- Mudança de campus, turno e/ou curso,\n- Mudança para nova matriz,\n- Nada Consta para docente,\n- Regime Domiciliar,\n- Revisão de resultado final,\n- Solicitação de aproveitamento de conhecimentos e experiências anteriores.\nPara fazer essas e/ou outras solicitações, acesse o site do Sistema de Chamados e faça login com o usuário e senha utilizados no Acadêmico: <https://suporte.ifes.edu.br/ensino/front/helpdesk.public.php>.\nEm caso de dúvidas, acesse o manual no link <https://www.serra.ifes.edu.br/images/stories/Navegar_Perfil/Aluno/Manual_Sistemas_de_Chamados_CRA_-_Usuario.pdf>"
   utter_info_ifes:
   - text: O Instituto Federal de Educação, Ciência e Tecnologia do Espírito Santo (Ifes) é uma instituição pública federal brasileira, vinculada ao Ministério da Educação, que oferece ensino médio integrado a cursos técnicos, cursos técnicos separados concomitantes ou subsequentes ao ensino médio, cursos superiores, pós, especializações e mestrado e é uma das Instituições de Ensino de maior prestígio no Brasil, além de ensino de excelência, tendo as maiores notas do Enem.
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
 
 actions:
 - action_campus_link_calendario_academico
@@ -653,8 +633,5 @@ actions:
 - utter_reuniao_pedagogica
 - utter_rod
 - utter_sistema_chamados
-<<<<<<< HEAD
-=======
 - utter_info_ifes
 version: '2.0'
->>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
