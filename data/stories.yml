@@ -113,6 +113,11 @@ stories:
     - intent: informar_nome
     - action: utter_nao_entendi
     - intent: informar_nome
+- story: sobre o Ifes
+  steps:
+  - intent: info_ifes
+  - action: utter_info_ifes
+  - action: action_listen
 - story: transferencia de outra instituição para o ifes #001
   steps:
   - intent: transferencia_de_outra_escola
@@ -160,18 +165,13 @@ stories:
 ## Fechando
 - story: Mudança de campus geral #006
   steps:
-    - intent: mudanca_campus_geral
-    - action: utter_mudanca_campus_geral
+    - intent: mudanca_campus
+    - action: utter_mudanca_campus
     - action: utter_continuar_conversa
 - story: Mudança de turno #007
   steps:
     - intent: mudanca_turno
     - action: utter_mudanca_turno
-    - action: utter_continuar_conversa
-- story: Quando pode mudar de campus #008
-  steps:
-    - intent: mudanca_campus_quando
-    - action: utter_mudanca_campus_quando
     - action: utter_continuar_conversa
 - story: Mudanca de turma #009
   steps:
@@ -721,17 +721,45 @@ stories:
     - intent: sumario_rod
     - action: utter_sumario_rod
     - action: utter_continuar_conversa
+<<<<<<< HEAD
 
+=======
+- story: Processos pedagógicos e didáticos #091
+  steps:    
+    - intent: processos_pedagogicos_e_didaticos
+    - action: utter_processos_pedagogicos_e_didaticos
+    - action: utter_continuar_conversa
+- story: educacao_nacional_constituicao_form_integral #092
+  steps:
+    - intent: educacao_nacional_constituicao_form_integral
+    - action: utter_educacao_nacional_constituicao_form_integral
+    - action: utter_continuar_conversa
+- story: gestao_educacional #093
+  steps:
+    - intent: gestao_educacional
+    - action: utter_gestao_educacional
+    - action: utter_continuar_conversa
+- story: educacao_profissional #094
+  steps:
+    - intent: educacao_profissional
+    - action: utter_educacao_profissional
+    - action: utter_continuar_conversa
+- story: responsabilidade_social #095
+  steps:
+    - intent: responsabilidade_social
+    - action: utter_responsabilidade_social
+    - action: utter_continuar_conversa
+- story: educacao_especial #096
+  steps:
+    - intent: educacao_especial
+    - action: utter_educacao_especial
+    - action: utter_continuar_conversa    
+>>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
 ### Assuntos gerais
 - story: Assunto 1
   steps:
     - intent: transferencias
     - action: utter_transferencias
-    - action: action_listen
-- story: Assunto 1.4
-  steps:
-    - intent: mudanca_campus
-    - action: utter_mudanca_campus
     - action: action_listen
 - story: Assunto 2
   steps:
@@ -917,7 +945,11 @@ stories:
     - action: utter_continuar_conversa
 - story: Sistema de Chamados Mudança matriz
   steps:
+<<<<<<< HEAD
     - intent: SC_mudança_matriz
+=======
+    - intent: SC_mudanca_matriz
+>>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
     - action: utter_sistema_chamados
     - action: utter_continuar_conversa
 - story: Sistema de Chamados Nada consta
@@ -940,4 +972,18 @@ stories:
     - intent: SC_aproveitamento
     - action: utter_sistema_chamados
     - action: utter_continuar_conversa
+<<<<<<< HEAD
     
+=======
+- story: interactive_story_1
+  steps:
+  - intent: cumprimento
+  - action: utter_cumprimentar
+  - intent: informar_nome
+    entities:
+    - nome_usuario: Paulo
+  - slot_was_set:
+    - nome_usuario: Paulo
+  - action: utter_nao_entendi
+  - action: action_uncheck_uncheck_all
+>>>>>>> 92ddd745803454d6072d9bd9487e399668cdc947
